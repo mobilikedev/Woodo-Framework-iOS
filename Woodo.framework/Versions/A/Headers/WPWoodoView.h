@@ -6,10 +6,16 @@
 //  Copyright (c) 2013 Woodo. All rights reserved.
 //
 
-@interface WPWoodoView : UIImageView <UIGestureRecognizerDelegate>
+@interface WPWoodoView : UIView
 
-@property (nonatomic, readwrite) NSURL *contentUrl;
+#define WoodoPlayerPerformedFinishNotification @"videoplayer.performed.finish"
+#define WoodoPlayerErrorNotification @"videoplayer.error"
 
-- (void) play;
+- (void) play:(NSURL *) url
+withAttachment:(UIView *) attachmentView
+withAdvertisementToken:(NSString *) token;
+- (void) pause:(void(^)(BOOL succeed)) resultHandler;
+- (void) resume:(void(^)(BOOL succeed)) resultHandler;
+- (void) seekTo:(CGFloat) percentage resultHandler:(void(^)(BOOL succeed)) resultHandler;
 
 @end
