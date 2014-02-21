@@ -145,6 +145,7 @@ Usage
 
     i.e
 
+    ```Objective-C
       - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
       {
         // Override point for customization after application launch.
@@ -158,6 +159,7 @@ Usage
        
         return YES;
       }
+    ```
 
   - See sample project for usage
 
