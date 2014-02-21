@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WEViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nul-Wu-n3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="3qK-mr-ee0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="768" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-p1-jFz">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet purus mi. Suspendisse feugiat mollis diam lobortis euismod. Nulla eu nisi ultrices, condimentum justo ut, rhoncus magna. Quisque fermentum justo quam, sed venenatis orci rhoncus vel. Nullam id tristique neque. Etiam volutpat arcu ac arcu ornare, ac volutpat urna facilisis. Aliquam sit amet lacus eget quam lacinia aliquam. Morbi quis imperdiet leo. Nam non sem eleifend sem imperdiet vehicula sed vel lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed feugiat sed felis nec ultrices. Nulla laoreet, est sed rutrum sollicitudin, nibh libero sodales leo, vel commodo nisi urna a mi. Nam id tortor non ipsum iaculis venenatis. Curabitur egestas nunc sit amet neque semper, non consectetur nisl vehicula. Mauris condimentum eleifend neque, et porttitor orci faucibus nec. Aenean eleifend justo nec iaculis ultricies.
+
+Quisque ut libero ipsum. In tortor lorem, viverra sit amet auctor ut, mattis id justo. Etiam egestas volutpat pulvinar. Nulla facilisi. Vestibulum nulla leo, placerat facilisis diam ac, hendrerit feugiat justo. Vivamus nec quam quis arcu rhoncus viverra. Suspendisse fringilla elementum ligula et pharetra. Sed vitae justo pulvinar, posuere orci non, dapibus est. Integer tristique convallis elit, sit amet varius augue elementum nec. Suspendisse rhoncus vitae lorem at pulvinar. Curabitur at sapien lorem. Etiam metus quam, sagittis luctus fringilla non, posuere id massa. Nam malesuada urna sed purus ultricies malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas cursus nunc ut nisl porttitor, ut dignissim ligula aliquet. Phasellus luctus et mi a semper.
+
+Nulla iaculis ac nisi ac vehicula. Nullam pulvinar mi vitae faucibus luctus. Vestibulum eu turpis in diam egestas sodales nec ac nulla. Fusce et tincidunt risus, eget gravida urna. Pellentesque rutrum est non lacus placerat, non viverra urna venenatis. Cras mattis sapien nec purus venenatis tempor. Duis vulputate tincidunt mattis. Nullam sodales leo elit, hendrerit commodo neque sagittis eget. Ut vitae orci sit amet libero laoreet semper at quis nunc. In fringilla purus convallis massa bibendum pharetra. Fusce tempor metus nibh, quis tempor dolor adipiscing convallis. Praesent iaculis lacus vitae mauris imperdiet ullamcorper. Donec suscipit odio sit amet enim vulputate adipiscing. Aliquam vestibulum lectus ut condimentum convallis. Nunc molestie lacus nec gravida vulputate. Etiam suscipit neque et arcu accumsan, nec tempus erat elementum.
+
+Nulla aliquam ligula vel ornare pulvinar. Quisque ut augue ut erat blandit placerat sit amet at sem. Nulla a porttitor elit. Morbi hendrerit porttitor eros, et pulvinar magna luctus at. Aenean volutpat eleifend tortor, eu tristique libero. Suspendisse nunc nulla, porttitor ut mi sodales, volutpat vehicula est. Integer eu velit nec mi ultrices pulvinar. Fusce scelerisque lacus a purus mattis convallis.
+
+Cras eu dui molestie, tempor magna et, scelerisque velit. Proin pulvinar risus in ante elementum, et convallis quam tempus. Vivamus in ligula cursus felis feugiat pharetra ut sit amet nulla. Aliquam ut diam in mauris rutrum suscipit in sed urna. Nunc aliquet rhoncus eros, vitae imperdiet tellus rutrum vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc eget consequat augue. Vivamus nec risus pharetra, pharetra urna et, consectetur nisi. Sed in elementum mi. Suspendisse ac justo mi. Nullam enim augue, tincidunt eu urna vel, rutrum dignissim quam. Praesent malesuada diam ut tortor sollicitudin, semper tristique quam vehicula. Etiam facilisis placerat nunc eu fringilla. Cras augue lorem, aliquet ut dictum vitae, posuere eu elit. Sed in massa elementum, rhoncus justo vitae, fringilla erat. Integer accumsan, mauris vel elementum eleifend, erat lectus congue massa, eget pulvinar neque ligula vitae justo.
+
+Vivamus commodo imperdiet est, a adipiscing lacus dictum molestie. Integer at ante consequat quam rhoncus iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed tempor tincidunt urna, sit amet convallis urna pharetra quis. Proin posuere justo nec lectus aliquam, at aliquet eros fermentum. Etiam varius nisl in vestibulum imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus dui, sollicitudin vitae ultrices quis, volutpat eget arcu. Sed blandit ut neque vitae ultricies. Vivamus tortor mi, dignissim in viverra eu, tincidunt vel lacus. Proin neque leo, adipiscing id dolor a, posuere blandit libero. Nunc ac convallis libero.
+
+Nam tincidunt imperdiet porttitor. Donec in ligula quam. Nam non mi pretium, elementum augue ut, suscipit orci. Donec ut gravida nunc. Vivamus ac pellentesque velit. Donec pulvinar diam elit, sed consequat leo blandit ac. Nulla non elit at nulla aliquet dictum at et tortor. Curabitur euismod, magna quis pellentesque interdum, ipsum eros tincidunt est, congue sollicitudin ipsum elit sed nisi. Fusce et nulla vel dui eleifend euismod. Mauris ultrices at elit vel tristique. Sed tempus leo at erat elementum gravida.
+
+Maecenas vehicula molestie elementum. Pellentesque lacinia justo sit amet interdum pretium. Pellentesque feugiat dolor vitae urna malesuada cursus. Quisque semper leo ut tortor hendrerit, eget tempor metus tincidunt. Maecenas mattis dapibus enim, et sagittis mi malesuada ac. Suspendisse nisi est, suscipit vel leo vel, interdum faucibus enim. Suspendisse tincidunt id eros ut auctor. Maecenas ornare est augue, quis scelerisque libero facilisis sed. Suspendisse adipiscing pretium arcu sit amet molestie. Proin tincidunt non metus eget tempus. Curabitur ut iaculis lectus, ut dignissim ante. Praesent faucibus justo libero, quis consequat nisi faucibus in. In eu nisi a tellus viverra dictum eu a justo. Nullam non eros et sem aliquam malesuada quis auctor erat.
+
+Sed porttitor velit at feugiat eleifend. Fusce et nibh lacinia justo facilisis eleifend dignissim quis elit. Nam rhoncus et velit in dignissim. Quisque rutrum metus nisl, nec interdum diam aliquet eu. Mauris faucibus ullamcorper tincidunt. Mauris gravida nisi nisl, non tincidunt augue dictum lacinia. Praesent porta, lectus ornare sollicitudin aliquam, odio tellus cursus metus, et vestibulum libero arcu sed felis. Aenean mattis, nibh sit amet iaculis dapibus, metus nulla auctor eros, eu tincidunt neque augue et massa. Integer eget mollis nisl. Quisque eu nisl sit amet nibh mattis semper sit amet id metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut bibendum magna. Nunc sollicitudin tincidunt est, vel dignissim nibh blandit ac. Sed placerat nibh a turpis venenatis adipiscing.
+
+Integer scelerisque, nisl a tempus faucibus, ante elit blandit libero, non lacinia odio diam in justo. Suspendisse viverra lorem eu mauris viverra, ut tempor sapien mollis. Suspendisse et arcu non magna feugiat sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ut malesuada mi, sit amet ullamcorper erat. Pellentesque aliquet elit non metus viverra, id aliquam magna ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras pellentesque malesuada odio sed auctor.
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="police" translatesAutoresizingMaskIntoConstraints="NO" id="SFc-GO-bhu">
+                                <rect key="frame" x="20" y="36" width="440" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="440" id="lDV-8U-MeW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Ln-p1-jFz" secondAttribute="trailing" id="5tL-yM-cLi"/>
+                            <constraint firstItem="4Ln-p1-jFz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6wa-26-m4h"/>
+                            <constraint firstItem="3qK-mr-ee0" firstAttribute="top" secondItem="SFc-GO-bhu" secondAttribute="bottom" constant="740" id="Az4-Qj-Oq8"/>
+                            <constraint firstItem="SFc-GO-bhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="R54-Nz-k18"/>
+                            <constraint firstItem="4Ln-p1-jFz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cfu-AX-4Kz"/>
+                            <constraint firstItem="SFc-GO-bhu" firstAttribute="top" secondItem="Nul-Wu-n3a" secondAttribute="bottom" constant="16" id="hrV-zv-Ela"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ln-p1-jFz" secondAttribute="bottom" id="zk8-mL-6hP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoThumbnail" destination="SFc-GO-bhu" id="A3J-Jl-doz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="police" width="768" height="432"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
