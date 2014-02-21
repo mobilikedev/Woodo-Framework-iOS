@@ -141,11 +141,25 @@ Usage
 
   - Setup -
 
-    In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPWoodoView class before usage. 
+    In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPWoodoView class before usage. It is recommended to perform setup on "UIApplicationDelegate" instance's "application:application didFinishLaunchingWithOptions:." selector. 
 
-    [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
-    [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
-    [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
+    i.e
+
+    ******************************
+    ** - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    ** {
+    **     // Override point for customization after application launch.
+    **     
+    **     // ...
+    **     
+    **     [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
+    **     [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
+    **     [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
+    **
+    **     // ...
+    **    
+    **     return YES;
+    ** }
 
   - See sample project for usage
 
