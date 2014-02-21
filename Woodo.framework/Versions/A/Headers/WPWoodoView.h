@@ -25,6 +25,15 @@
 @property (nonatomic, readwrite, strong) void(^finishHandler)();
 @property (nonatomic, readwrite, strong) void(^errorHandler)();
 
+
++ (NSString *) appToken;
++ (void) setAppToken:(NSString *) appToken;
++ (NSString *) accessToken;
++ (void) setAccessToken:(NSString *) accessToken;
++ (NSString *) clientSecret;
++ (void) setClientSecret:(NSString *) clientSecret;
+
+
 - (void) play:(NSURL *) url
 withAttachment:(UIView *) attachmentView
 withAdvertisementToken:(NSString *) token;

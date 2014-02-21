@@ -25,6 +25,13 @@
 @property (nonatomic, readwrite, strong) void(^finishHandler)();
 @property (nonatomic, readwrite, strong) void(^errorHandler)();
 
++ (NSString *) appToken;
++ (void) setAppToken:(NSString *) appToken;
++ (NSString *) accessToken;
++ (void) setAccessToken:(NSString *) accessToken;
++ (NSString *) clientSecret;
++ (void) setClientSecret:(NSString *) clientSecret;
+
 - (void) pause;
 - (void) resume;
 - (void) seekTo:(CGFloat) percentage;

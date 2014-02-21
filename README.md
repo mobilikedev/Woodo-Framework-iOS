@@ -136,7 +136,7 @@ Installation
     ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
 
-  Usage
+Usage
 ----------------------------------
 
   - See sample project for usage
