@@ -24,7 +24,7 @@ Installation
 
 - Framework installation -
 
-  - Drag and drop
+  - Drag and drop -
 
     1. Drag "Woodo.framework" into "Frameworks" folder. 
       If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
@@ -72,7 +72,7 @@ Installation
   	! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
   
-  - Adding from project settings
+  - Adding from project settings -
 
     1. Click project navigator icon /** TODO: Add icon here */ at upper-left corner (below run button)
 
@@ -138,6 +138,14 @@ Installation
 
 Usage
 ----------------------------------
+
+  - Setup -
+
+    In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPWoodoView class before usage. 
+
+    [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
+    [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
+    [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
 
   - See sample project for usage
 
