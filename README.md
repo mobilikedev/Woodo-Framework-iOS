@@ -15,7 +15,7 @@ Requirements
 
 - Frameworks -
 
-  As of "-ObjC" flag must be defined, no need to link additional binary libraries (frameworks)
+  - As of "-ObjC" flag must be defined, no need to link additional binary libraries (frameworks)
 
 
 
@@ -44,7 +44,7 @@ Installation
 
       must be selected.
 
-      If cloned PushAd's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.
+      If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.
 
     2. Now, you have to add 'Other Linker Flags'. Click project navigator icon /** TODO: Add icon here */ at upper-left corner (below run button)
 
