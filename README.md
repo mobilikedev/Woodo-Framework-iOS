@@ -145,21 +145,19 @@ Usage
 
     i.e
 
-    ******************************
-    ** - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-    ** {
-    **     // Override point for customization after application launch.
-    **     
-    **     // ...
-    **     
-    **     [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
-    **     [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
-    **     [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
-    **
-    **     // ...
-    **    
-    **     return YES;
-    ** }
+      - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+      {
+        // Override point for customization after application launch.
+        
+        // ...
+        
+        [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
+        [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
+        [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
+        // ...
+       
+        return YES;
+      }
 
   - See sample project for usage
 
