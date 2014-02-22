@@ -136,7 +136,7 @@ Installation
     ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
 
-Usage
+How to use
 ----------------------------------
 
   - Setup -
@@ -160,6 +160,21 @@ Usage
         return YES;
       }
     ```
+
+  - iPhone -
+
+    // TODO: Add iPhone usage
+
+
+  - iPad -
+
+    // TODO: Add iPad usage
+
+  
+  - Custom player controllers -
+  
+    // TODO: 
+
 
   - See sample project for usage
 
