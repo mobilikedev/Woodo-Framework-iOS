@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8287CADA18BB73E100EA10E2 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8287CAD918BB73E100EA10E2 /* Woodo.framework */; };
+		8287CADD18BB77C600EA10E2 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */; };
+		8287CADF18BB789700EA10E2 /* WoodoImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */; };
+		8287CAE218BB7A1100EA10E2 /* WSIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */; };
 		828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EA18B7E7D2000ABA29 /* Foundation.framework */; };
 		828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */; };
 		828DA1EF18B7E7D2000ABA29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EE18B7E7D2000ABA29 /* UIKit.framework */; };
@@ -21,7 +25,6 @@
 		828DA20C18B7E7D2000ABA29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EE18B7E7D2000ABA29 /* UIKit.framework */; };
 		828DA21418B7E7D2000ABA29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 828DA21218B7E7D2000ABA29 /* InfoPlist.strings */; };
 		828DA21618B7E7D2000ABA29 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DA21518B7E7D2000ABA29 /* SampleTests.m */; };
-		828DA22018B7F42F000ABA29 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA21F18B7F42F000ABA29 /* Woodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8287CAD718BB4F4600EA10E2 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
+		8287CAD918BB73E100EA10E2 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
+		8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
+		8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WoodoImages.xcassets; sourceTree = "<group>"; };
+		8287CAE018BB7A1100EA10E2 /* WSIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIPadViewController.h; sourceTree = "<group>"; };
+		8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIPadViewController.m; sourceTree = "<group>"; };
 		828DA1E718B7E7D2000ABA29 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828DA1EA18B7E7D2000ABA29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +63,6 @@
 		828DA21118B7E7D2000ABA29 /* SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleTests-Info.plist"; sourceTree = "<group>"; };
 		828DA21318B7E7D2000ABA29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		828DA21518B7E7D2000ABA29 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
-		828DA21F18B7F42F000ABA29 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8287CADA18BB73E100EA10E2 /* Woodo.framework in Frameworks */,
 				828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */,
 				828DA1EF18B7E7D2000ABA29 /* UIKit.framework in Frameworks */,
 				828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */,
-				828DA22018B7F42F000ABA29 /* Woodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +112,8 @@
 		828DA1E918B7E7D2000ABA29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				828DA21F18B7F42F000ABA29 /* Woodo.framework */,
+				8287CAD918BB73E100EA10E2 /* Woodo.framework */,
+				8287CAD718BB4F4600EA10E2 /* Woodo.framework */,
 				828DA1EA18B7E7D2000ABA29 /* Foundation.framework */,
 				828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */,
 				828DA1EE18B7E7D2000ABA29 /* UIKit.framework */,
@@ -116,6 +125,7 @@
 		828DA1F018B7E7D2000ABA29 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */,
 				828DA1F918B7E7D2000ABA29 /* WSAppDelegate.h */,
 				828DA1FA18B7E7D2000ABA29 /* WSAppDelegate.m */,
 				828DA1FC18B7E7D2000ABA29 /* Main.storyboard */,
@@ -123,6 +133,9 @@
 				828DA20018B7E7D2000ABA29 /* WSViewController.m */,
 				828DA20218B7E7D2000ABA29 /* Images.xcassets */,
 				828DA1F118B7E7D2000ABA29 /* Supporting Files */,
+				8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */,
+				8287CAE018BB7A1100EA10E2 /* WSIPadViewController.h */,
+				8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -234,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				828DA20318B7E7D2000ABA29 /* Images.xcassets in Resources */,
+				8287CADF18BB789700EA10E2 /* WoodoImages.xcassets in Resources */,
 				828DA1F518B7E7D2000ABA29 /* InfoPlist.strings in Resources */,
 				828DA1FE18B7E7D2000ABA29 /* Main.storyboard in Resources */,
+				8287CADD18BB77C600EA10E2 /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8287CAE218BB7A1100EA10E2 /* WSIPadViewController.m in Sources */,
 				828DA1FB18B7E7D2000ABA29 /* WSAppDelegate.m in Sources */,
 				828DA1F718B7E7D2000ABA29 /* main.m in Sources */,
 				828DA20118B7E7D2000ABA29 /* WSViewController.m in Sources */,
@@ -386,12 +402,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
+					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,12 +423,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
+					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -475,6 +497,7 @@
 				828DA21B18B7E7D2000ABA29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		828DA21C18B7E7D2000ABA29 /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +506,7 @@
 				828DA21E18B7E7D2000ABA29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,7 +13,7 @@
 
 @interface WSViewController ()
 
-@property (nonatomic, readwrite) WPWoodoViewController *woodoViewController;
+@property (nonatomic, readwrite, weak) WPWoodoViewController *woodoViewController;
 
 @end
 
@@ -44,7 +44,7 @@
     // Advertisement token
     woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
     // Video content url (The content url that you want to play)
-    woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+    woodoViewController.url = [NSURL URLWithString:@"http://milliyet-p.mncdn.com/web/video/2013/10/08/162738_360p.mp4"];
     // Attach mint-fresh instance of default view controller
     woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
     

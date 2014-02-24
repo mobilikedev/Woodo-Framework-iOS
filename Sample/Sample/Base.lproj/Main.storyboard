@@ -34,7 +34,7 @@ The Reds are now the Premier League's top scorers with 70 goals but looked ragge
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Liverpool" translatesAutoresizingMaskIntoConstraints="NO" id="alp-nt-PUH">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Liverpool" translatesAutoresizingMaskIntoConstraints="NO" id="alp-nt-PUH">
                                 <rect key="frame" x="0.0" y="17" width="320" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
