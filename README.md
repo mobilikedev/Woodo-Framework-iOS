@@ -109,13 +109,13 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/librarychooserdialog.png "Framework and library chooser dialog")
 
-    7. Select "Add other..." ![Alt text](/ReadmeAssets/Common/iconaddother.png "Add items (+)")
+    7. Select "Add other..." ![Alt text](/ReadmeAssets/Common/iconaddother.png "Add other...")
 
     8. Find Woodo.framework at the opened dialog
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/otherlibrarychooserdialog.png "Other library chooser dialog")
 
-    9. Select "OK"
+    9. Select "Open" ![Alt text](/ReadmeAssets/Common/iconopen.png "Open")
 
     10. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
