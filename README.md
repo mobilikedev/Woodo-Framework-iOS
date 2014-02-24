@@ -101,9 +101,9 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/selectbuildphases.png "Select 'Build Phases'")
 
-    5. Open "Link with binary libraries"
+    5. Open "Link with binary libraries" selectlinkbinarywithlibraries
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectlinkwithbinarylibraries.png "Select 'Link with binary libraries'")
 
     6. Select "Add items (+)"
 
