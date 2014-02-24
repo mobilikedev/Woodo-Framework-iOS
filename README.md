@@ -97,9 +97,9 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
-    4. Select "Build phases" tab
+    4. Select "Build Phases" tab
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select 'Build Phases'")
 
     5. Open "Link with binary libraries"
 
