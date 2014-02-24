@@ -163,7 +163,45 @@ How to use
 
   - iPhone -
 
-    // TODO: Add iPhone usage
+    - Basic usage
+
+      - Import required headers 
+
+      ```Objective-C
+        #import <Woodo/WPWoodoViewController.h>
+      ```
+
+      Note that: Only WPWoodoViewController is allowed to use at iPhone environment
+
+      - Allocate and initialize new view WPWoodoViewController instance. WPWoodoViewController's url variable should be defined in order to play desired content.
+
+      ```Objective-C
+      // Allocate & initialize new instance
+      WPWoodoViewController *woodoViewController = [[WPWoodoViewController alloc] init];
+      
+      // Setup
+      // Advertisement token
+      woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
+      // Video content url (The content url that you want to play)
+      woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+      ```
+
+      - Present WPWoodoViewController instance
+
+      ```Objective-C
+      [self presentViewController:woodoViewController
+                       animated:YES
+                     completion:nil];
+      ```
+
+    - Add default video controllers
+
+      - Import required headers
+
+      ```Objective-C
+        #import <Woodo/WPDefaultVideoControllerView.h>
+      ```
+
 
 
   - iPad -
