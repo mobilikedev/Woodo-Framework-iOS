@@ -32,6 +32,8 @@ Installation
 
       // TODO: Insert screenshot here
 
+      ![Alt text](/ReadmeAssets/DragAndDrop/dragsetup.png "Drag & drop Woodo.framework")
+
 
       . On dialog;
 
