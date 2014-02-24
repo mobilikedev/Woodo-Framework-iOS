@@ -105,13 +105,11 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/selectlinkwithbinarylibraries.png "Select 'Link with binary libraries'")
 
-    6. Select "Add items (+)" ![Alt text](/ReadmeAssets/Common/iconadd.png "Add items (+)"). Framework and library chooser dialog will open
+    6. Select "Add items" ![Alt text](/ReadmeAssets/Common/iconadd.png "Add items (+)"). Framework and library chooser dialog will open
 
       ![Alt text](/ReadmeAssets/Common/librarychooserdialog.png "Framework and library chooser dialog")
 
-    7. Select "Add other..."
-
-      // TODO: Add screenshot
+    7. Select "Add other..." ![Alt text](/ReadmeAssets/Common/iconaddother.png "Add items (+)")
 
     8. Find Woodo.framework at the opened dialog
 
