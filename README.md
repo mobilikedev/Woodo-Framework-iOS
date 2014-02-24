@@ -63,7 +63,7 @@ Installation
 
     4. Select project target
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select target")
 
     5. Select "Build settings" tab
 
