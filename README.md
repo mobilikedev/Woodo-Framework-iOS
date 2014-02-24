@@ -198,7 +198,7 @@ How to use
       woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
       ```
 
-      - Present WPWoodoViewController instance
+      - Present WPWoodoViewController instance. Video will start playing automatically, once modal presentation done.
 
       ```Objective-C
       [self presentViewController:woodoViewController
@@ -225,7 +225,115 @@ How to use
 
   - iPad -
 
-    // TODO: Add iPad usage
+    - Basic usage
+
+      - As subview
+
+        - Import required headers 
+
+        ```Objective-C
+        #import <Woodo/WPWoodoView.h>
+        ```
+
+        - Allocate and initialize new view WPWoodoView instance.
+
+        ```Objective-C
+        // Allocate & initialized new instance
+        WPWoodoView *woodoView = [[WPWoodoView alloc] initWithFrame:CGRectZero];
+        ```
+
+        - Attach WPWoodoView instance to its container
+
+        ```Objective-C
+        // Attach woodo view into its container
+        [self.videoThumbnail addSubview:woodoView];
+        self.woodoView = woodoView;
+        
+        // Define metrics via auto layout constraints
+        NSDictionary *views = NSDictionaryOfVariableBindings(woodoView);
+        
+        NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[woodoView]-|" options:0 metrics:nil views:views];
+        
+        NSArray *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[woodoView]-|" options:0 metrics:nil views:views];
+        
+        [self.videoThumbnail addConstraints:horizontalConstraints];
+        [self.videoThumbnail addConstraints:verticalConstraints];
+        ```
+
+        - Start playing video
+
+        ```Objective-C
+        [self.woodoView play:[NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"]
+          withAttachment:nil
+  withAdvertisementToken:@"<Please contact team@woodo.tv for token data>"];
+        ```
+
+        - Add default video controllers
+
+          - Import required headers
+
+          ```Objective-C
+            #import <Woodo/WPDefaultVideoControllerView.h>
+          ```
+
+          - Pass WPDefaultVideoControllerView instance as attachmentView to "play:withAttachment:withAdvertisementToken:."" selector.
+
+            ```Objective-C
+            [self.woodoView play:[NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"]
+                  withAttachment:[[WPDefaultVideoControllerView alloc] init]
+          withAdvertisementToken:@"<Please contact team@woodo.tv for token data>"];
+            ```
+
+          If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
+
+
+      - As modal view controller
+
+        - Import required headers 
+
+        ```Objective-C
+          #import <Woodo/WPWoodoViewController.h>
+        ```
+
+        Note that: Only WPWoodoViewController is allowed to use at iPhone environment
+
+        - Allocate and initialize new view WPWoodoViewController instance. WPWoodoViewController's url variable should be defined in order to play desired content.
+
+        ```Objective-C
+        // Allocate & initialize new instance
+        WPWoodoViewController *woodoViewController = [[WPWoodoViewController alloc] init];
+        
+        // Setup
+        // Advertisement token
+        woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
+        // Video content url (The content url that you want to play)
+        woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+        ```
+
+        - Present WPWoodoViewController instance. Video will start playing automatically, once modal presentation done.
+
+        ```Objective-C
+        [self presentViewController:woodoViewController
+                         animated:YES
+                       completion:nil];
+        ```
+
+        - Add default video controllers
+
+          - Import required headers
+
+          ```Objective-C
+            #import <Woodo/WPDefaultVideoControllerView.h>
+          ```
+
+          - Assign new instance of WPDefaultVideoController to WPWoodoViewController's attachmentView variable.
+
+          ```Objective-C
+          // Attach mint-fresh instance of default view controller
+          woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
+          ```
+
+          If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
 
   
   - Custom player controllers -
