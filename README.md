@@ -30,9 +30,10 @@ Installation
       If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
       A dialog for file adding options will appear
 
-      // TODO: Insert screenshot here
 
-      ![Alt text](/ReadmeAssets/DragAndDrop/dragsetup.png "Drag & drop Woodo.framework")
+      ![Alt text](/ReadmeAssets/DragAndDrop/draganddrop.png "Drag & drop Woodo.framework")
+
+      ![Alt text](/ReadmeAssets/DragAndDrop/dragsetup.png "File adding options setup dialog")
 
 
       . On dialog;
@@ -40,6 +41,9 @@ Installation
         * Create groups for any added folders and
 
         	// TODO: add screenshot
+
+          ![Alt text](/ReadmeAssets/DragAndDrop/dragsetupfolders.png "Select 'Create groups for any added folders and'")
+
 
 
         * "<YourProjectName>" at "Add to targets" section
