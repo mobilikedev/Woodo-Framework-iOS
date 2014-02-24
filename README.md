@@ -75,6 +75,8 @@ Installation
 
     7. Add "-ObjC" flag, and you are done.
 
+      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Add linker flag '-ObjC'")
+
     ! To dive in coding, see "How to use" section below.
   	! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
