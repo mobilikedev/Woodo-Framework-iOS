@@ -73,9 +73,11 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
 
-    7. Add "-ObjC" flag, and you are done.
+    7. Add "-ObjC" flag
 
       ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Add linker flag '-ObjC'")
+
+    , and you are done.
 
     ! To dive in coding, see "How to use" section below.
   	! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
@@ -83,17 +85,17 @@ Installation
   
   - Adding from project settings -
 
-    1. Click project navigator icon /** TODO: Add icon here */ at upper-left corner (below run button)
+    1. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
       ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
 
     2. Select your project from project navigator
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
     3. Select project target
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
     4. Select "Build phases" tab
 
@@ -117,29 +119,32 @@ Installation
 
     9. Select "OK"
 
-    10. Now, you have to add 'Other Linker Flags'. Click project navigator icon /** TODO: Add icon here */ at upper-left corner (below run button)
+    10. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
       ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
 
     11. Select your project from project navigator
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
     12. Select project target
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
     13. Select "Build settings" tab
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
 
     14. Search for "Other Linker Flags"
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
 
     15. Add "-ObjC" flag
 
+      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Add linker flag '-ObjC'")
+
     , and you are done.
+    
 
     ! To dive in coding, see "How to use" section below.
     ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
