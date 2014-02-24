@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="228" width="320" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Jordan Henderson and Daniel Sturridge scored twice as Liverpool beat Swansea in a thriller to tighten their grip on fourth place in the Premier League.
+                                <string key="text">Jordan Henderson and Daniel Sturridge scored twice as Liverpool beat Swansea in a thriller to tighten their grip on fourth place in the Premier League.
 Sturridge's opener came two minutes in and Henderson soon bent in a second.
 But Jonjo Shelvey pulled one back with a fine 20-yard shot and Wilfried Bony headed in off Martin Skrtel to level.
 The two sides of Liverpool
@@ -30,7 +30,7 @@ Sturridge headed in his second from Luis Suarez's cross but Bony pulled Swansea 
 The best and worst of Liverpool was once again on show as the Reds closed the gap to Premier League leaders Chelsea to four points.
 But manager Brendan Rodgers was once again relying on his team's attacking class to override its defensive deficiencies as they maintained their bid to end a five-season exile from the Champions League.
 There were flashes of fine forward play as Sturridge became only the second player to score in eight consecutive Premier League matches, taking his tally to 18 league goals for the season in the process.
-The Reds are now the Premier League's top scorers with 70 goals but looked ragged at the back far too often for Rodgers's comfort.</mutableString>
+The Reds are now the Premier League's top scorers with 70 goals but looked ragged at the back far too often for Rodgers's comfort.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

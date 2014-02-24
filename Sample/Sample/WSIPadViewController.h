@@ -10,4 +10,6 @@
 
 @interface WSIPadViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *videoThumbnail;
+
 @end

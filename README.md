@@ -250,6 +250,7 @@ How to use
         self.woodoView = woodoView;
         
         // Define metrics via auto layout constraints
+        [woodoView setTranslatesAutoresizingMaskIntoConstraints:NO];
         NSDictionary *views = NSDictionaryOfVariableBindings(woodoView);
         
         NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[woodoView]-|" options:0 metrics:nil views:views];
