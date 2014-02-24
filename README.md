@@ -63,11 +63,11 @@ Installation
 
     4. Select project target
 
-      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select target")
+      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
     5. Select "Build settings" tab
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
 
     6. Search for "Other Linker Flags"
 
