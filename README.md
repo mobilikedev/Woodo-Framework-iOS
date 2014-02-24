@@ -40,13 +40,14 @@ Installation
 
         * Create groups for any added folders and
 
-        	// TODO: add screenshot
-
           ![Alt text](/ReadmeAssets/DragAndDrop/dragsetupfolders.png "Select 'Create groups for any added folders and'")
 
 
 
-        * "<YourProjectName>" at "Add to targets" section
+        * "YourProjectName" at "Add to targets" section.
+
+          ![Alt text](/ReadmeAssets/DragAndDrop/dragsetuptarget.png "Select <YourProjectName> at "Add to targets" section.")
+
 
       must be selected.
 
