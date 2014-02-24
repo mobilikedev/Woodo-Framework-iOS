@@ -5,15 +5,15 @@ Woodo Framework (v1.0.0)
 Requirements
 ----------------------------------
 
-- Minimum deployment target - 
+- Minimum deployment target
 
   - iOS 6.0
 
-- Auto Reference Counting (ARC) -
+- Auto Reference Counting (ARC)
 
   - Yes, it requires ARC.
 
-- Frameworks -
+- Frameworks
 
   - As of "-ObjC" flag must be defined, no need to link additional binary libraries (frameworks)
 
@@ -22,9 +22,9 @@ Requirements
 Installation
 ----------------------------------
 
-- Framework installation -
+- Framework installation
 
-  - Drag and drop -
+  - Drag and drop
 
     1. Drag "Woodo.framework" into "Frameworks" folder. 
       If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
@@ -59,7 +59,7 @@ Installation
 
     3. Select your project from project navigator
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
     4. Select project target
 
