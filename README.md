@@ -99,7 +99,7 @@ Installation
 
     4. Select "Build Phases" tab
 
-      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select 'Build Phases'")
+      ![Alt text](/ReadmeAssets/Common/selectbuildphases.png "Select 'Build Phases'")
 
     5. Open "Link with binary libraries"
 
