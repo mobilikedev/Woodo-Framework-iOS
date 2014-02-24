@@ -71,7 +71,7 @@ Installation
 
     6. Search for "Other Linker Flags"
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
 
     7. Add "-ObjC" flag, and you are done.
 
