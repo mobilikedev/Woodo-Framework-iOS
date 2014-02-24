@@ -25,6 +25,9 @@
 		828DA20C18B7E7D2000ABA29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EE18B7E7D2000ABA29 /* UIKit.framework */; };
 		828DA21418B7E7D2000ABA29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 828DA21218B7E7D2000ABA29 /* InfoPlist.strings */; };
 		828DA21618B7E7D2000ABA29 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 828DA21518B7E7D2000ABA29 /* SampleTests.m */; };
+		82B637E518BB9E8600FFD434 /* WSCustomVideoControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B637E418BB9E8600FFD434 /* WSCustomVideoControllerView.m */; };
+		82B637EB18BB9ED500FFD434 /* WSCustomVideoControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B637EA18BB9ED500FFD434 /* WSCustomVideoControllerView.xib */; };
+		82B637EE18BBAEDB00FFD434 /* WSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B637ED18BBAEDB00FFD434 /* WSBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,11 @@
 		828DA21118B7E7D2000ABA29 /* SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleTests-Info.plist"; sourceTree = "<group>"; };
 		828DA21318B7E7D2000ABA29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		828DA21518B7E7D2000ABA29 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
+		82B637E318BB9E8600FFD434 /* WSCustomVideoControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCustomVideoControllerView.h; sourceTree = "<group>"; };
+		82B637E418BB9E8600FFD434 /* WSCustomVideoControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCustomVideoControllerView.m; sourceTree = "<group>"; };
+		82B637EA18BB9ED500FFD434 /* WSCustomVideoControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCustomVideoControllerView.xib; sourceTree = "<group>"; };
+		82B637EC18BBAEDB00FFD434 /* WSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBaseViewController.h; sourceTree = "<group>"; };
+		82B637ED18BBAEDB00FFD434 /* WSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,11 @@
 				8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */,
 				8287CAE018BB7A1100EA10E2 /* WSIPadViewController.h */,
 				8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */,
+				82B637E318BB9E8600FFD434 /* WSCustomVideoControllerView.h */,
+				82B637E418BB9E8600FFD434 /* WSCustomVideoControllerView.m */,
+				82B637EA18BB9ED500FFD434 /* WSCustomVideoControllerView.xib */,
+				82B637EC18BBAEDB00FFD434 /* WSBaseViewController.h */,
+				82B637ED18BBAEDB00FFD434 /* WSBaseViewController.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -249,6 +262,7 @@
 				828DA20318B7E7D2000ABA29 /* Images.xcassets in Resources */,
 				8287CADF18BB789700EA10E2 /* WoodoImages.xcassets in Resources */,
 				828DA1F518B7E7D2000ABA29 /* InfoPlist.strings in Resources */,
+				82B637EB18BB9ED500FFD434 /* WSCustomVideoControllerView.xib in Resources */,
 				828DA1FE18B7E7D2000ABA29 /* Main.storyboard in Resources */,
 				8287CADD18BB77C600EA10E2 /* Main-iPad.storyboard in Resources */,
 			);
@@ -269,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B637E518BB9E8600FFD434 /* WSCustomVideoControllerView.m in Sources */,
+				82B637EE18BBAEDB00FFD434 /* WSBaseViewController.m in Sources */,
 				8287CAE218BB7A1100EA10E2 /* WSIPadViewController.m in Sources */,
 				828DA1FB18B7E7D2000ABA29 /* WSAppDelegate.m in Sources */,
 				828DA1F718B7E7D2000ABA29 /* main.m in Sources */,

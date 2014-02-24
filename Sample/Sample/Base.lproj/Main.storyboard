@@ -44,10 +44,10 @@ The Reds are now the Premier League's top scorers with 70 goals but looked ragge
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="F6T-BG-dXO" firstAttribute="top" secondItem="alp-nt-PUH" secondAttribute="bottom" constant="8" symbolic="YES" id="D86-pj-wup"/>
+                            <constraint firstItem="F6T-BG-dXO" firstAttribute="top" secondItem="alp-nt-PUH" secondAttribute="bottom" constant="11" id="D86-pj-wup"/>
                             <constraint firstItem="alp-nt-PUH" firstAttribute="trailing" secondItem="F6T-BG-dXO" secondAttribute="trailing" id="JwU-IV-3sy"/>
                             <constraint firstItem="F6T-BG-dXO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Mnd-mZ-Qet"/>
-                            <constraint firstItem="alp-nt-PUH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="SNf-uw-L0N"/>
+                            <constraint firstItem="alp-nt-PUH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="17" id="SNf-uw-L0N"/>
                             <constraint firstAttribute="bottom" secondItem="F6T-BG-dXO" secondAttribute="bottom" id="VOy-wA-Sa9"/>
                             <constraint firstItem="F6T-BG-dXO" firstAttribute="leading" secondItem="alp-nt-PUH" secondAttribute="leading" id="gfv-ul-0a0"/>
                         </constraints>

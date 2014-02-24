@@ -10,12 +10,7 @@
 #import <Woodo/WPDefaultVideoControllerView.h>
 
 #import "WSViewController.h"
-
-@interface WSViewController ()
-
-@property (nonatomic, readwrite, weak) WPWoodoViewController *woodoViewController;
-
-@end
+#import "WSCustomVideoControllerView.h"
 
 @implementation WSViewController
 
@@ -39,8 +34,51 @@
     woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
     // Video content url (The content url that you want to play)
     woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
-    // Attach mint-fresh instance of default view controller
-    woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
+//    // Attach mint-fresh instance of default view controller
+//    woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
+    // Attach mint-fresh instance of custom view controller
+    woodoViewController.attachmentView = [self createVideoControllerView];
+    
+    // Register for callbacks
+    __weak WSViewController *selfWeak = self;
+    
+    woodoViewController.startHandler = ^(){
+    
+    };
+    
+    woodoViewController.progressUpdateHandler = ^(CGFloat currentTime, CGFloat duration){
+    
+        dispatch_async(dispatch_get_main_queue(), ^(){
+        
+            WSViewController *selfStrong = selfWeak;
+            
+            if (selfStrong)
+            {
+                CGFloat progress = currentTime / duration;
+                
+                [selfStrong.customVideoControllerView.progressSlider
+                 setValue:progress
+                 animated:YES];
+                
+                NSString *progressText = [NSString stringWithFormat:@"%@ / %@", [selfStrong formatTime:currentTime], [selfStrong formatTime:duration]];
+                [selfStrong.customVideoControllerView.progressLabel setText:progressText];
+            }
+        });
+    };
+    
+    woodoViewController.finishHandler = ^(){
+    
+        dispatch_async(dispatch_get_main_queue(), ^(){
+            
+            WSViewController *selfStrong = selfWeak;
+            
+            if (selfStrong)
+            {
+                [selfStrong dismissViewControllerAnimated:YES
+                                               completion:nil];
+            }
+        });
+    };
     
     self.woodoViewController = woodoViewController;
     

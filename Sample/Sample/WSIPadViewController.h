@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Woodo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WSBaseViewController.h"
 
-@interface WSIPadViewController : UIViewController
+@interface WSIPadViewController : WSBaseViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *videoThumbnail;
 
