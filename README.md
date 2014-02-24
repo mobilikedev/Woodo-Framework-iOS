@@ -31,7 +31,7 @@ Installation
       A dialog for file adding options will appear
 
 
-      ![Alt text](/ReadmeAssets/DragAndDrop/draganddrop.png "Drag & drop Woodo.framework")
+      ![Alt text](/ReadmeAssets/DragAndDrop/dragframework.png "Drag & drop Woodo.framework")
 
       ![Alt text](/ReadmeAssets/DragAndDrop/dragsetup.png "File adding options setup dialog")
 
