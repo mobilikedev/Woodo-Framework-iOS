@@ -202,7 +202,14 @@ How to use
         #import <Woodo/WPDefaultVideoControllerView.h>
       ```
 
+      - Assign new instance of WPDefaultVideoController to WPWoodoViewController's attachmentView variable.
 
+      ```Objective-C
+      // Attach mint-fresh instance of default view controller
+      woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
+      ```
+
+      If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
 
   - iPad -
 
