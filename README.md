@@ -105,9 +105,9 @@ Installation
 
       ![Alt text](/ReadmeAssets/Common/selectlinkwithbinarylibraries.png "Select 'Link with binary libraries'")
 
-    6. Select "Add items (+)"
+    6. Select "Add items (+)" ![Alt text](/ReadmeAssets/Common/iconadd.png "Add items (+)"). Framework and library chooser dialog will open
 
-      // TODO: Add screenshot
+      ![Alt text](/ReadmeAssets/Common/librarychooserdialog.png "Framework and library chooser dialog")
 
     7. Select "Add other..."
 
