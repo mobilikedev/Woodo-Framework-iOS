@@ -295,8 +295,6 @@ How to use
           #import <Woodo/WPWoodoViewController.h>
         ```
 
-        Note that: Only WPWoodoViewController is allowed to use at iPhone environment
-
         - Allocate and initialize new view WPWoodoViewController instance. WPWoodoViewController's url variable should be defined in order to play desired content.
 
         ```Objective-C
