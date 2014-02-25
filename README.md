@@ -208,6 +208,8 @@ How to use
 
     - Add default video controllers
 
+      - Import required assets by simply dragging WoodoImages.xcassets folder inside project
+
       - Import required headers
 
       ```Objective-C
@@ -313,11 +315,13 @@ How to use
 
         ```Objective-C
         [self presentViewController:woodoViewController
-                         animated:YES
-                       completion:nil];
+                           animated:YES
+                         completion:nil];
         ```
 
         - Add default video controllers
+
+          - Import required assets by simply dragging WoodoImages.xcassets folder inside project
 
           - Import required headers
 
