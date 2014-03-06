@@ -18,9 +18,9 @@
 @property (nonatomic, readwrite, weak) WPWoodoViewController *woodoViewController;
 @property (nonatomic, readwrite, weak) WSCustomVideoControllerView *customVideoControllerView;
 
-- (UIView *) createVideoControllerView;
-- (IBAction) togglePlay:(id)sender;
-- (IBAction) seek:(UISlider *)sender;
-- (NSString *) formatTime:(CGFloat) timeInSeconds;
+//- (UIView *) createVideoControllerView;
+//- (IBAction) togglePlay:(id)sender;
+//- (IBAction) seek:(UISlider *)sender;
+//- (NSString *) formatTime:(CGFloat) timeInSeconds;
 
 @end

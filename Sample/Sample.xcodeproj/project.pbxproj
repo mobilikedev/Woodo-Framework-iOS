@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8287CADA18BB73E100EA10E2 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8287CAD918BB73E100EA10E2 /* Woodo.framework */; };
-		8287CADD18BB77C600EA10E2 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */; };
-		8287CADF18BB789700EA10E2 /* WoodoImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */; };
+		8222CAE118C8BCE900C1C483 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */; };
+		8222CAE318C8C14900C1C483 /* WoodoImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8222CAE218C8C14900C1C483 /* WoodoImages.xcassets */; };
+		8222CAE718C8DBDE00C1C483 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8222CAE618C8DBDE00C1C483 /* Woodo.framework */; };
 		8287CAE218BB7A1100EA10E2 /* WSIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */; };
 		828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EA18B7E7D2000ABA29 /* Foundation.framework */; };
 		828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */; };
@@ -41,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8287CAD718BB4F4600EA10E2 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
-		8287CAD918BB73E100EA10E2 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
+		8222CAE218C8C14900C1C483 /* WoodoImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = WoodoImages.xcassets; path = ../WoodoImages.xcassets; sourceTree = "<group>"; };
+		8222CAE418C8DBBF00C1C483 /* PushAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushAd.framework; path = "../../pushad-framework-ios/PushAd.framework"; sourceTree = "<group>"; };
+		8222CAE618C8DBDE00C1C483 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
 		8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
-		8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WoodoImages.xcassets; sourceTree = "<group>"; };
 		8287CAE018BB7A1100EA10E2 /* WSIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIPadViewController.h; sourceTree = "<group>"; };
 		8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIPadViewController.m; sourceTree = "<group>"; };
 		828DA1E718B7E7D2000ABA29 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8287CADA18BB73E100EA10E2 /* Woodo.framework in Frameworks */,
+				8222CAE718C8DBDE00C1C483 /* Woodo.framework in Frameworks */,
 				828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */,
 				828DA1EF18B7E7D2000ABA29 /* UIKit.framework in Frameworks */,
 				828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */,
@@ -120,8 +120,8 @@
 		828DA1E918B7E7D2000ABA29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8287CAD918BB73E100EA10E2 /* Woodo.framework */,
-				8287CAD718BB4F4600EA10E2 /* Woodo.framework */,
+				8222CAE618C8DBDE00C1C483 /* Woodo.framework */,
+				8222CAE418C8DBBF00C1C483 /* PushAd.framework */,
 				828DA1EA18B7E7D2000ABA29 /* Foundation.framework */,
 				828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */,
 				828DA1EE18B7E7D2000ABA29 /* UIKit.framework */,
@@ -133,7 +133,7 @@
 		828DA1F018B7E7D2000ABA29 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				8287CADE18BB789700EA10E2 /* WoodoImages.xcassets */,
+				8222CAE218C8C14900C1C483 /* WoodoImages.xcassets */,
 				828DA1F918B7E7D2000ABA29 /* WSAppDelegate.h */,
 				828DA1FA18B7E7D2000ABA29 /* WSAppDelegate.m */,
 				828DA1FC18B7E7D2000ABA29 /* Main.storyboard */,
@@ -259,12 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8222CAE318C8C14900C1C483 /* WoodoImages.xcassets in Resources */,
+				8222CAE118C8BCE900C1C483 /* Main-iPad.storyboard in Resources */,
 				828DA20318B7E7D2000ABA29 /* Images.xcassets in Resources */,
-				8287CADF18BB789700EA10E2 /* WoodoImages.xcassets in Resources */,
 				828DA1F518B7E7D2000ABA29 /* InfoPlist.strings in Resources */,
 				82B637EB18BB9ED500FFD434 /* WSCustomVideoControllerView.xib in Resources */,
 				828DA1FE18B7E7D2000ABA29 /* Main.storyboard in Resources */,
-				8287CADD18BB77C600EA10E2 /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +419,13 @@
 					"$(inherited)",
 					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
 					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
+					/Users/gokhanbarisaker/Workspace/iOS/Experimental/Sample,
+					"/Users/gokhanbarisaker/Workspace/iOS/pushad-framework-ios",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,11 +442,13 @@
 					"$(inherited)",
 					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
 					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
+					/Users/gokhanbarisaker/Workspace/iOS/Experimental/Sample,
+					"/Users/gokhanbarisaker/Workspace/iOS/pushad-framework-ios",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "sms_s.png"
+      "filename" : "gray2.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "sms_l.png"
+      "filename" : "gray2-1.png"
     }
   ],
   "info" : {

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Woodo. All rights reserved.
 //
 
-#import <Woodo/WPWoodoViewController.h>
+#import <Woodo/WPManager.h>
 #import <Woodo/WPDefaultVideoControllerView.h>
 
 #import "WSViewController.h"
@@ -26,65 +26,50 @@
 
 - (void) play:(id) sender
 {
-    // Allocate & initialize new instance
-    WPWoodoViewController *woodoViewController = [[WPWoodoViewController alloc] init];
+    NSURL *url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+    NSString *token = @"TESTPLAYER";
+    UIView *attachmentView = [[WPDefaultVideoControllerView alloc] init];
     
-    // Setup
-    // Advertisement token
-    woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
-    // Video content url (The content url that you want to play)
-    woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
-//    // Attach mint-fresh instance of default view controller
-//    woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
-    // Attach mint-fresh instance of custom view controller
-    woodoViewController.attachmentView = [self createVideoControllerView];
-    
-    // Register for callbacks
-    __weak WSViewController *selfWeak = self;
-    
-    woodoViewController.startHandler = ^(){
-    
-    };
-    
-    woodoViewController.progressUpdateHandler = ^(CGFloat currentTime, CGFloat duration){
-    
-        dispatch_async(dispatch_get_main_queue(), ^(){
+    void(^presentationHandler)() = ^(){
         
-            WSViewController *selfStrong = selfWeak;
-            
-            if (selfStrong)
-            {
-                CGFloat progress = currentTime / duration;
-                
-                [selfStrong.customVideoControllerView.progressSlider
-                 setValue:progress
-                 animated:YES];
-                
-                NSString *progressText = [NSString stringWithFormat:@"%@ / %@", [selfStrong formatTime:currentTime], [selfStrong formatTime:duration]];
-                [selfStrong.customVideoControllerView.progressLabel setText:progressText];
-            }
-        });
+        NSLog(@"Presented (Available on UI)");
     };
     
-    woodoViewController.finishHandler = ^(){
-    
-        dispatch_async(dispatch_get_main_queue(), ^(){
-            
-            WSViewController *selfStrong = selfWeak;
-            
-            if (selfStrong)
-            {
-                [selfStrong dismissViewControllerAnimated:YES
-                                               completion:nil];
-            }
-        });
+    void(^startHandler)() = ^(){
+        
+        NSLog(@"Started");
     };
     
-    self.woodoViewController = woodoViewController;
+    void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
+        
+        // Video progress updated
+        NSLog(@"%f / %f", currentTime, duration);
+    };
     
-    [self presentViewController:self.woodoViewController
-                       animated:YES
-                     completion:nil];
+    void(^finishHandler)() = ^(){
+        
+        // Handle finish here
+        NSLog(@"Finished");
+    };
+    
+    void(^errorHandler)() = ^(){
+        
+        // Handle error here
+        NSLog(@"Error");
+    };
+    
+    [[WPManager sharedManager]
+     presentWoodoWithUrl:url
+     token:token
+     attachmentView:attachmentView
+     shareText:nil
+     shareTitle:nil
+     shareRecipients:nil
+     presentationHandler:presentationHandler
+     startHandler:startHandler
+     progressHandler:progressHandler
+     finishHandler:finishHandler
+     errorHandler:errorHandler];
 }
 
 @end
