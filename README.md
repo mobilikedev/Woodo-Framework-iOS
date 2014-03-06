@@ -237,7 +237,7 @@ How to use
 
       If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
 
-    - Add social share data related to given video content url.
+    - Add social share data
 
       ```Objective-C
 
@@ -262,6 +262,51 @@ How to use
         errorHandler:nil];
       ```
 
+    - Add event handlers
+
+      ```Objective-C
+
+        void(^presentationHandler)() = ^(){
+            
+          NSLog(@"Presented (Available on UI)");
+        };
+            
+        void(^startHandler)() = ^(){
+          
+          NSLog(@"Started");
+        };
+        
+        void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
+            
+          // Video progress updated
+          NSLog(@"%f / %f", currentTime, duration);
+        };
+        
+        void(^finishHandler)() = ^(){
+          
+          // Handle finish here
+          NSLog(@"Finished");
+        };
+            
+        void(^errorHandler)() = ^(){
+          
+          // Handle error here
+          NSLog(@"Error");
+        };
+            
+        [[WPManager sharedManager]
+          presentWoodoWithUrl:url
+          token:token
+          attachmentView:attachmentView
+          shareText:shareText
+          shareTitle:shareTitle
+          shareRecipients:shareRecipients
+          presentationHandler:nil
+          startHandler:startHandler
+          progressHandler:progressHandler
+          finishHandler:finishHandler
+          errorHandler:errorHandler];
+      ```
 
 
   - iPad -
