@@ -1,4 +1,4 @@
-Woodo Framework (v1.0.2)
+Woodo Framework (v1.1.0)
 ==================================
 
 
@@ -153,7 +153,7 @@ How to use
 
   - Setup -
 
-    In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPWoodoView class before usage. It is recommended to perform setup on "UIApplicationDelegate" instance's "application:application didFinishLaunchingWithOptions:." selector. 
+    In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPManager class before usage. It is recommended to perform setup on "UIApplicationDelegate" instance's "application:application didFinishLaunchingWithOptions:." selector. 
 
     i.e
 
@@ -164,9 +164,9 @@ How to use
         
         // ...
         
-        [WPWoodoView setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
-        [WPWoodoView setAppToken:@"<Please contact team@woodo.tv for app token data>"];
-        [WPWoodoView setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
+        [WPManager setAccessToken:@"<Please contact team@woodo.tv for access token data>"];
+        [WPManager setAppToken:@"<Please contact team@woodo.tv for app token data>"];
+        [WPManager setClientSecret:@"<Please contact team@woodo.tv for client secret data>"];
         // ...
        
         return YES;
@@ -180,30 +180,29 @@ How to use
       - Import required headers 
 
       ```Objective-C
-        #import <Woodo/WPWoodoViewController.h>
+        #import <Woodo/WPManager.h>
       ```
 
-      Note that: Only WPWoodoViewController is allowed to use at iPhone environment
+      Note that: Only presentation is allowed to use at iPhone environment.
 
-      - Allocate and initialize new view WPWoodoViewController instance. WPWoodoViewController's url variable should be defined in order to play desired content.
-
-      ```Objective-C
-      // Allocate & initialize new instance
-      WPWoodoViewController *woodoViewController = [[WPWoodoViewController alloc] init];
-      
-      // Setup
-      // Advertisement token
-      woodoViewController.token = @"<Please contact team@woodo.tv for token data>";
-      // Video content url (The content url that you want to play)
-      woodoViewController.url = [NSURL URLWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
-      ```
-
-      - Present WPWoodoViewController instance. Video will start playing automatically, once modal presentation done.
+      - Call presentation method over WPManager's shared instance with required parameters
 
       ```Objective-C
-      [self presentViewController:woodoViewController
-                       animated:YES
-                     completion:nil];
+      NSURL *url = [NSURL URLWithString:@"<Your video content url>"];
+      NSString *token = @"<Please contact team@woodo.tv for player token data>";
+
+      [[WPManager sharedManager]
+        presentWoodoWithUrl:url
+        token:token
+        attachmentView:nil
+        shareText:nil
+        shareTitle:nil
+        shareRecipients:nil
+        presentationHandler:nil
+        startHandler:nil
+        progressHandler:nil
+        finishHandler:nil
+        errorHandler:nil];
       ```
 
     - Add default video controllers
@@ -217,10 +216,24 @@ How to use
       ```
 
       - Assign new instance of WPDefaultVideoController to WPWoodoViewController's attachmentView variable.
+      - Pass new instance of WPDefaultVideoController to "presentWoodoWithUrl:token:attachmentView:shareText:shareTitle:shareRecipients:presentationHandler:startHandler:progressHandler:finishHandler:errorHandler:." selector.
 
       ```Objective-C
-      // Attach mint-fresh instance of default view controller
-      woodoViewController.attachmentView = [[WPDefaultVideoControllerView alloc] init];
+
+      UIView *attachmentView = [WPDefaultVideoControllerView new];
+
+      [[WPManager sharedManager]
+        presentWoodoWithUrl:url
+        token:token
+        attachmentView:attachmentView
+        shareText:nil
+        shareTitle:nil
+        shareRecipients:nil
+        presentationHandler:nil
+        startHandler:nil
+        progressHandler:nil
+        finishHandler:nil
+        errorHandler:nil];
       ```
 
       If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
