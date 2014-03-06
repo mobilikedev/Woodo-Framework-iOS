@@ -215,7 +215,6 @@ How to use
         #import <Woodo/WPDefaultVideoControllerView.h>
       ```
 
-      - Assign new instance of WPDefaultVideoController to WPWoodoViewController's attachmentView variable.
       - Pass new instance of WPDefaultVideoController to "presentWoodoWithUrl:token:attachmentView:shareText:shareTitle:shareRecipients:presentationHandler:startHandler:progressHandler:finishHandler:errorHandler:." selector.
 
       ```Objective-C
@@ -237,6 +236,33 @@ How to use
       ```
 
       If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
+
+    - Add social share data related to given video content url.
+
+      ```Objective-C
+
+      // Used for facebook, twitter & mail share options (Required)
+      NSString *shareText = @"Mobilike'ın yeni sitesi yayında - http://mobilike.com/";
+      // Only used for mail share options (Optional)
+      NSString *shareTitle = @"Mobilike";
+      // Only used for mail share options
+      NSArray *shareRecipients = @[@"love@mobilike.com"];
+
+      [[WPManager sharedManager]
+        presentWoodoWithUrl:url
+        token:token
+        attachmentView:attachmentView
+        shareText:shareText
+        shareTitle:shareTitle
+        shareRecipients:shareRecipients
+        presentationHandler:nil
+        startHandler:nil
+        progressHandler:nil
+        finishHandler:nil
+        errorHandler:nil];
+      ```
+
+
 
   - iPad -
 
