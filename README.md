@@ -251,7 +251,7 @@ How to use
       [[WPManager sharedManager]
         presentWoodoWithUrl:url
         token:token
-        attachmentView:attachmentView
+        attachmentView:nil
         shareText:shareText
         shareTitle:shareTitle
         shareRecipients:shareRecipients
@@ -297,11 +297,11 @@ How to use
         [[WPManager sharedManager]
           presentWoodoWithUrl:url
           token:token
-          attachmentView:attachmentView
-          shareText:shareText
-          shareTitle:shareTitle
-          shareRecipients:shareRecipients
-          presentationHandler:nil
+          attachmentView:nil
+          shareText:nil
+          shareTitle:nil
+          shareRecipients:nil
+          presentationHandler:presentationHandler
           startHandler:startHandler
           progressHandler:progressHandler
           finishHandler:finishHandler
