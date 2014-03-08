@@ -1,0 +1,983 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Woodo by mobilikedev</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Woodo</h1>
+        <p class="header">Woodo TV iOS framework</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mobilikedev/Woodo-Framework-iOS/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mobilikedev/Woodo-Framework-iOS/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mobilikedev/Woodo-Framework-iOS">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mobilikedev">mobilikedev</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="woodo-framework-v112" class="anchor" href="#woodo-framework-v112"><span class="octicon octicon-link"></span></a>Woodo Framework (v1.1.2)</h1>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>
+<p>Minimum deployment target</p>
+
+<ul>
+<li>iOS 6.0</li>
+</ul>
+</li>
+<li>
+<p>Auto Reference Counting (ARC)</p>
+
+<ul>
+<li>Yes, it requires ARC.</li>
+</ul>
+</li>
+<li>
+<p>Frameworks</p>
+
+<ul>
+<li>As of "-ObjC" flag must be defined, no need to link additional binary libraries (frameworks)</li>
+</ul>
+</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ul>
+<li>
+<p>Framework installation</p>
+
+<ul>
+<li>
+<p>Drag and drop</p>
+
+<ol>
+<li>
+<p>Drag "Woodo.framework" into "Frameworks" folder. 
+If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
+A dialog for file adding options will appear</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragframework.png" alt="Alt text" title="Drag &amp; drop Woodo.framework"></p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetup.png" alt="Alt text" title="File adding options setup dialog"></p>
+
+<p>. On dialog;</p>
+
+<ul>
+<li>
+<p>Create groups for any added folders and</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetupfolders.png" alt="Alt text" title="Select 'Create groups for any added folders and'"></p>
+</li>
+<li>
+<p>"YourProjectName" at "Add to targets" section.</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetuptarget.png" alt="Alt text" title='Select &lt;YourProjectName&gt; at "Add to targets" section.'></p>
+</li>
+</ul>
+<p>must be selected.</p>
+
+<p>If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.</p>
+</li>
+</ol>
+<ol>
+<li>
+<p>Now, you have to add 'Other Linker Flags'. Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build settings" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildsettings.png" alt="Alt text" title="Select 'Build Settings'"></p>
+</li>
+<li>
+<p>Search for "Other Linker Flags"</p>
+
+<p><img src="/ReadmeAssets/Common/searchotherlinkerflags.png" alt="Alt text" title="Search for 'Other Linker Flags'"></p>
+</li>
+<li>
+<p>Add "-ObjC" flag</p>
+
+<p><img src="/ReadmeAssets/Common/addflagobjc.png" alt="Alt text" title="Add linker flag '-ObjC'"></p>
+</li>
+</ol>
+<p>, and you are done.</p>
+
+<p>! To dive in coding, see "How to use" section below.
+! Have questions, ask them on StackOverflow: <a href="http://stackoverflow.com/questions/tagged/woodo">http://stackoverflow.com/questions/tagged/woodo</a></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Adding from project settings</p>
+
+<ol>
+<li>
+<p>Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build Phases" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildphases.png" alt="Alt text" title="Select 'Build Phases'"></p>
+</li>
+<li>
+<p>Open "Link with binary libraries"</p>
+
+<p><img src="/ReadmeAssets/Common/selectlinkwithbinarylibraries.png" alt="Alt text" title="Select 'Link with binary libraries'"></p>
+</li>
+<li>
+<p>Select "Add items" <img src="/ReadmeAssets/Common/iconadd.png" alt="Alt text" title="Add items (+)">. Framework and library chooser dialog will open</p>
+
+<p><img src="/ReadmeAssets/Common/librarychooserdialog.png" alt="Alt text" title="Framework and library chooser dialog"></p>
+</li>
+<li><p>Select "Add other..." <img src="/ReadmeAssets/Common/iconaddother.png" alt="Alt text" title="Add other..."></p></li>
+<li>
+<p>Find Woodo.framework at the opened dialog</p>
+
+<p><img src="/ReadmeAssets/Common/otherlibrarychooserdialog.png" alt="Alt text" title="Other library chooser dialog"></p>
+</li>
+<li><p>Select "Open" <img src="/ReadmeAssets/Common/iconopen.png" alt="Alt text" title="Open"></p></li>
+<li>
+<p>Now, you have to add 'Other Linker Flags'. Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build settings" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildsettings.png" alt="Alt text" title="Select 'Build Settings'"></p>
+</li>
+<li>
+<p>Search for "Other Linker Flags"</p>
+
+<p><img src="/ReadmeAssets/Common/searchotherlinkerflags.png" alt="Alt text" title="Search for 'Other Linker Flags'"></p>
+</li>
+<li>
+<p>Add "-ObjC" flag</p>
+
+<p><img src="/ReadmeAssets/Common/addflagobjc.png" alt="Alt text" title="Add linker flag '-ObjC'"></p>
+</li>
+</ol>
+<p>, and you are done.</p>
+
+<p>! To dive in coding, see "How to use" section below.
+! Have questions, ask them on StackOverflow: <a href="http://stackoverflow.com/questions/tagged/woodo">http://stackoverflow.com/questions/tagged/woodo</a></p>
+</li>
+</ul>
+</li>
+</ul><h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<ul>
+<li>
+<p>Setup -</p>
+
+<p>In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPManager class before usage. It is recommended to perform setup on "UIApplicationDelegate" instance's "application:application didFinishLaunchingWithOptions:." selector. </p>
+
+<p>i.e</p>
+
+<div class="highlight highlight-Objective-C"><pre>  <span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="n">application</span><span class="o">:</span><span class="p">(</span><span class="n">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="n">application</span> <span class="n">didFinishLaunchingWithOptions</span><span class="o">:</span><span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">launchOptions</span>
+  <span class="p">{</span>
+    <span class="c1">// Override point for customization after application launch.</span>
+
+    <span class="c1">// ...</span>
+
+    <span class="p">[</span><span class="n">WPManager</span> <span class="n">setAccessToken</span><span class="o">:</span><span class="s">@"&lt;Please contact team@woodo.tv for access token data&gt;"</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">WPManager</span> <span class="n">setAppToken</span><span class="o">:</span><span class="s">@"&lt;Please contact team@woodo.tv for app token data&gt;"</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">WPManager</span> <span class="n">setClientSecret</span><span class="o">:</span><span class="s">@"&lt;Please contact team@woodo.tv for client secret data&gt;"</span><span class="p">];</span>
+    <span class="c1">// ...</span>
+
+    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+</li>
+<li>
+<p>iPhone</p>
+
+<ul>
+<li>
+<p>Basic usage</p>
+
+<ul>
+<li>
+<p>Import required headers </p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPManager.h&gt;</span>
+</pre></div>
+
+<p>Note that: Only presentation is allowed to use at iPhone environment.</p>
+
+<ul>
+<li>Call presentation method over WPManager's shared instance with required parameters</li>
+</ul>
+<div class="highlight highlight-Objective-C"><pre><span class="n">NSURL</span> <span class="o">*</span><span class="n">url</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="n">URLWithString</span><span class="o">:</span><span class="s">@"&lt;Your video content url&gt;"</span><span class="p">];</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">token</span> <span class="o">=</span> <span class="s">@"&lt;Please contact team@woodo.tv for player token data&gt;"</span><span class="p">;</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="nb">nil</span>
+  <span class="nl">shareText:</span><span class="nb">nil</span>
+  <span class="nl">shareTitle:</span><span class="nb">nil</span>
+  <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add default video controllers</p>
+
+<ul>
+<li><p>Import required assets by simply dragging WoodoImages.xcassets folder inside project</p></li>
+<li><p>Import required headers</p></li>
+</ul>
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPDefaultVideoControllerView.h&gt;</span>
+</pre></div>
+
+<ul>
+<li>
+<p>Import required assets</p>
+
+<ul>
+<li>
+<p>Drag and drop</p>
+
+<ol>
+<li>
+<p>Drag "WoodoImages.xcassets" into "Project" folder.
+If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
+A dialog for file adding options will appear</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragassets.png" alt="Alt text" title="Drag &amp; drop WoodoImages.xcassets"></p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetup.png" alt="Alt text" title="File adding options setup dialog"></p>
+
+<p>. On dialog;</p>
+
+<ul>
+<li>
+<p>Create groups for any added folders and</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetupfolders.png" alt="Alt text" title="Select 'Create groups for any added folders and'"></p>
+</li>
+<li>
+<p>"YourProjectName" at "Add to targets" section.</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetuptarget.png" alt="Alt text" title='Select &lt;YourProjectName&gt; at "Add to targets" section.'></p>
+</li>
+</ul>
+<p>must be selected.</p>
+
+<p>If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.</p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>
+<p>Adding from project settings -</p>
+
+<ol>
+<li>
+<p>Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build Phases" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildphases.png" alt="Alt text" title="Select 'Build Phases'"></p>
+</li>
+<li>
+<p>Open "Copy bundle resources"</p>
+
+<p><img src="/ReadmeAssets/Common/selectcopybundleresources.png" alt="Alt text" title="Select 'Link with binary libraries'"></p>
+</li>
+<li>
+<p>Select "Add items" <img src="/ReadmeAssets/Common/iconadd.png" alt="Alt text" title="Add items (+)">. Bundle resource chooser dialog will open</p>
+
+<p><img src="/ReadmeAssets/Common/bundleresourcechooserdialog.png" alt="Alt text" title="Bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Add other..." <img src="/ReadmeAssets/Common/iconaddother.png" alt="Alt text" title="Add other..."></p></li>
+<li>
+<p>Find WoodoImages.xcassets at the opened dialog</p>
+
+<p><img src="/ReadmeAssets/Common/otherbundleresourcechooserdialog.png" alt="Alt text" title="Other bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Open" <img src="/ReadmeAssets/Common/iconopen.png" alt="Alt text" title="Open"></p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Pass new instance of WPDefaultVideoController to "presentWoodoWithUrl:token:attachmentView:shareText:shareTitle:shareRecipients:presentationHandler:startHandler:progressHandler:finishHandler:errorHandler:." selector.</li>
+</ul>
+<div class="highlight highlight-Objective-C"><pre>
+<span class="n">UIView</span> <span class="o">*</span><span class="n">attachmentView</span> <span class="o">=</span> <span class="p">[</span><span class="n">WPDefaultVideoControllerView</span> <span class="n">new</span><span class="p">];</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="n">attachmentView</span>
+  <span class="nl">shareText:</span><span class="nb">nil</span>
+  <span class="nl">shareTitle:</span><span class="nb">nil</span>
+  <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+
+<p>If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.</p>
+</li>
+<li>
+<p>Add social share data</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+<span class="c1">// Used for facebook, twitter &amp; mail share options (Required)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareText</span> <span class="o">=</span> <span class="s">@"Mobilike'ın yeni sitesi yayında - http://mobilike.com/"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options (Optional)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareTitle</span> <span class="o">=</span> <span class="s">@"Mobilike"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options</span>
+<span class="n">NSArray</span> <span class="o">*</span><span class="n">shareRecipients</span> <span class="o">=</span> <span class="p">@[</span><span class="s">@"love@mobilike.com"</span><span class="p">];</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="nb">nil</span>
+  <span class="nl">shareText:</span><span class="n">shareText</span>
+  <span class="nl">shareTitle:</span><span class="n">shareTitle</span>
+  <span class="nl">shareRecipients:</span><span class="n">shareRecipients</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add event handlers</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">presentationHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Presented (Available on UI)"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">startHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Started"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">progressHandler</span><span class="p">)(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">)</span> <span class="o">=</span> <span class="o">^</span><span class="p">(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">){</span>
+
+    <span class="c1">// Video progress updated</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"%f / %f"</span><span class="p">,</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">duration</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">finishHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle finish here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Finished"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">errorHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle error here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Error"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+    <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+    <span class="nl">token:</span><span class="n">token</span>
+    <span class="nl">attachmentView:</span><span class="nb">nil</span>
+    <span class="nl">shareText:</span><span class="nb">nil</span>
+    <span class="nl">shareTitle:</span><span class="nb">nil</span>
+    <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+    <span class="nl">presentationHandler:</span><span class="n">presentationHandler</span>
+    <span class="nl">startHandler:</span><span class="n">startHandler</span>
+    <span class="nl">progressHandler:</span><span class="n">progressHandler</span>
+    <span class="nl">finishHandler:</span><span class="n">finishHandler</span>
+    <span class="nl">errorHandler:</span><span class="n">errorHandler</span><span class="p">];</span>
+</pre></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>iPad -</p>
+
+<ul>
+<li>
+<p>Basic usage</p>
+
+<ul>
+<li>
+<p>As subview</p>
+
+<ul>
+<li>
+<p>Import required headers </p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPManager.h&gt;</span>
+</pre></div>
+
+<p>Note that: Only presentation is allowed to use at iPhone environment.</p>
+
+<ul>
+<li>Call presentation method over WPManager's shared instance with required parameters</li>
+</ul>
+<div class="highlight highlight-Objective-C"><pre><span class="n">NSURL</span> <span class="o">*</span><span class="n">url</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="n">URLWithString</span><span class="o">:</span><span class="s">@"&lt;Your video content url&gt;"</span><span class="p">];</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">token</span> <span class="o">=</span> <span class="s">@"&lt;Please contact team@woodo.tv for player token data&gt;"</span><span class="p">;</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+<span class="nl">addWoodoToView:</span><span class="n">self</span><span class="p">.</span><span class="n">videoThumbnail</span>
+<span class="nl">url:</span><span class="n">url</span>
+<span class="nl">token:</span><span class="n">token</span>
+<span class="nl">attachmentView:</span><span class="nb">nil</span>
+<span class="nl">shareText:</span><span class="nb">nil</span>
+<span class="nl">shareTitle:</span><span class="nb">nil</span>
+<span class="nl">shareRecipients:</span><span class="nb">nil</span>
+<span class="nl">presentationHandler:</span><span class="nb">nil</span>
+<span class="nl">startHandler:</span><span class="nb">nil</span>
+<span class="nl">progressHandler:</span><span class="nb">nil</span>
+<span class="nl">finishHandler:</span><span class="nb">nil</span>
+<span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add default video controllers</p>
+
+<ul>
+<li><p>Import required assets by simply dragging WoodoImages.xcassets folder inside project</p></li>
+<li><p>Import required headers</p></li>
+</ul>
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPDefaultVideoControllerView.h&gt;</span>
+</pre></div>
+
+<ul>
+<li>
+<p>Import required assets</p>
+
+<ul>
+<li>
+<p>Drag and drop</p>
+
+<ol>
+<li>
+<p>Drag "WoodoImages.xcassets" into "Project" folder.
+If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
+A dialog for file adding options will appear</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragassets.png" alt="Alt text" title="Drag &amp; drop WoodoImages.xcassets"></p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetup.png" alt="Alt text" title="File adding options setup dialog"></p>
+
+<p>. On dialog;</p>
+
+<ul>
+<li>
+<p>Create groups for any added folders and</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetupfolders.png" alt="Alt text" title="Select 'Create groups for any added folders and'"></p>
+</li>
+<li>
+<p>"YourProjectName" at "Add to targets" section.</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetuptarget.png" alt="Alt text" title='Select &lt;YourProjectName&gt; at "Add to targets" section.'></p>
+</li>
+</ul>
+<p>must be selected.</p>
+
+<p>If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.</p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>
+<p>Adding from project settings -</p>
+
+<ol>
+<li>
+<p>Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build Phases" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildphases.png" alt="Alt text" title="Select 'Build Phases'"></p>
+</li>
+<li>
+<p>Open "Copy bundle resources"</p>
+
+<p><img src="/ReadmeAssets/Common/selectcopybundleresources.png" alt="Alt text" title="Select 'Link with binary libraries'"></p>
+</li>
+<li>
+<p>Select "Add items" <img src="/ReadmeAssets/Common/iconadd.png" alt="Alt text" title="Add items (+)">. Bundle resource chooser dialog will open</p>
+
+<p><img src="/ReadmeAssets/Common/bundleresourcechooserdialog.png" alt="Alt text" title="Bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Add other..." <img src="/ReadmeAssets/Common/iconaddother.png" alt="Alt text" title="Add other..."></p></li>
+<li>
+<p>Find WoodoImages.xcassets at the opened dialog</p>
+
+<p><img src="/ReadmeAssets/Common/otherbundleresourcechooserdialog.png" alt="Alt text" title="Other bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Open" <img src="/ReadmeAssets/Common/iconopen.png" alt="Alt text" title="Open"></p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>Pass new instance of WPDefaultVideoController to "presentWoodoWithUrl:token:attachmentView:shareText:shareTitle:shareRecipients:presentationHandler:startHandler:progressHandler:finishHandler:errorHandler:." selector.</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+  <span class="n">UIView</span> <span class="o">*</span><span class="n">attachmentView</span> <span class="o">=</span> <span class="p">[</span><span class="n">WPDefaultVideoControllerView</span> <span class="n">new</span><span class="p">];</span>
+
+  <span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+   <span class="nl">addWoodoToView:</span><span class="n">self</span><span class="p">.</span><span class="n">videoThumbnail</span>
+   <span class="nl">url:</span><span class="n">url</span>
+   <span class="nl">token:</span><span class="n">token</span>
+   <span class="nl">attachmentView:</span><span class="n">attachmentView</span>
+   <span class="nl">shareText:</span><span class="nb">nil</span>
+   <span class="nl">shareTitle:</span><span class="nb">nil</span>
+   <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+   <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+   <span class="nl">startHandler:</span><span class="nb">nil</span>
+   <span class="nl">progressHandler:</span><span class="nb">nil</span>
+   <span class="nl">finishHandler:</span><span class="nb">nil</span>
+   <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+</ul>
+<p>If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.</p>
+</li>
+<li>
+<p>Add social share data</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+<span class="c1">// Used for facebook, twitter &amp; mail share options (Required)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareText</span> <span class="o">=</span> <span class="s">@"Mobilike'ın yeni sitesi yayında - http://mobilike.com/"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options (Optional)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareTitle</span> <span class="o">=</span> <span class="s">@"Mobilike"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options</span>
+<span class="n">NSArray</span> <span class="o">*</span><span class="n">shareRecipients</span> <span class="o">=</span> <span class="p">@[</span><span class="s">@"love@mobilike.com"</span><span class="p">];</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+<span class="nl">addWoodoToView:</span><span class="n">self</span><span class="p">.</span><span class="n">videoThumbnail</span>
+<span class="nl">url:</span><span class="n">url</span>
+<span class="nl">token:</span><span class="n">token</span>
+<span class="nl">attachmentView:</span><span class="nb">nil</span>
+<span class="nl">shareText:</span><span class="n">shareText</span>
+<span class="nl">shareTitle:</span><span class="n">shareTitle</span>
+<span class="nl">shareRecipients:</span><span class="n">shareRecipients</span>
+<span class="nl">presentationHandler:</span><span class="nb">nil</span>
+<span class="nl">startHandler:</span><span class="nb">nil</span>
+<span class="nl">progressHandler:</span><span class="nb">nil</span>
+<span class="nl">finishHandler:</span><span class="nb">nil</span>
+<span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add event handlers</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">presentationHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Presented (Available on UI)"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">startHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Started"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">progressHandler</span><span class="p">)(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">)</span> <span class="o">=</span> <span class="o">^</span><span class="p">(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">){</span>
+
+    <span class="c1">// Video progress updated</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"%f / %f"</span><span class="p">,</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">duration</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">finishHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle finish here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Finished"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">errorHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle error here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Error"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+   <span class="nl">addWoodoToView:</span><span class="n">self</span><span class="p">.</span><span class="n">videoThumbnail</span>
+   <span class="nl">url:</span><span class="n">url</span>
+   <span class="nl">token:</span><span class="n">token</span>
+   <span class="nl">attachmentView:</span><span class="nb">nil</span>
+   <span class="nl">shareText:</span><span class="nb">nil</span>
+   <span class="nl">shareTitle:</span><span class="nb">nil</span>
+   <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+   <span class="nl">presentationHandler:</span><span class="n">presentationHandler</span>
+   <span class="nl">startHandler:</span><span class="n">startHandler</span>
+   <span class="nl">progressHandler:</span><span class="n">progressHandler</span>
+   <span class="nl">finishHandler:</span><span class="n">finishHandler</span>
+   <span class="nl">errorHandler:</span><span class="n">errorHandler</span><span class="p">];</span>
+</pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p>As modal view controller</p>
+
+<ul>
+<li>
+<p>Import required headers </p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPManager.h&gt;</span>
+</pre></div>
+</li>
+<li>
+<p>Call presentation method over WPManager's shared instance with required parameters</p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="n">NSURL</span> <span class="o">*</span><span class="n">url</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="n">URLWithString</span><span class="o">:</span><span class="s">@"&lt;Your video content url&gt;"</span><span class="p">];</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">token</span> <span class="o">=</span> <span class="s">@"&lt;Please contact team@woodo.tv for player token data&gt;"</span><span class="p">;</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="nb">nil</span>
+  <span class="nl">shareText:</span><span class="nb">nil</span>
+  <span class="nl">shareTitle:</span><span class="nb">nil</span>
+  <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add default video controllers</p>
+
+<ul>
+<li><p>Import required assets by simply dragging WoodoImages.xcassets folder inside project</p></li>
+<li>
+<p>Import required headers</p>
+
+<div class="highlight highlight-Objective-C"><pre><span class="cp">  #import &lt;Woodo/WPDefaultVideoControllerView.h&gt;</span>
+</pre></div>
+</li>
+<li>
+<p>Import required assets</p>
+
+<ul>
+<li>
+<p>Drag and drop</p>
+
+<ol>
+<li>
+<p>Drag "WoodoImages.xcassets" into "Project" folder.
+If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
+A dialog for file adding options will appear</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragassets.png" alt="Alt text" title="Drag &amp; drop WoodoImages.xcassets"></p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetup.png" alt="Alt text" title="File adding options setup dialog"></p>
+
+<p>. On dialog;</p>
+
+<ul>
+<li>
+<p>Create groups for any added folders and</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetupfolders.png" alt="Alt text" title="Select 'Create groups for any added folders and'"></p>
+</li>
+<li>
+<p>"YourProjectName" at "Add to targets" section.</p>
+
+<p><img src="/ReadmeAssets/DragAndDrop/dragsetuptarget.png" alt="Alt text" title='Select &lt;YourProjectName&gt; at "Add to targets" section.'></p>
+</li>
+</ul>
+<p>must be selected.</p>
+
+<p>If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.</p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>
+<p>Adding from project settings -</p>
+
+<ol>
+<li>
+<p>Click project navigator icon <img src="/ReadmeAssets/Common/iconnavigator.png" alt="Alt text" title="Navigator icon"> at upper-left corner (below run button)</p>
+
+<p>! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.</p>
+</li>
+<li>
+<p>Select your project from project navigator</p>
+
+<p><img src="/ReadmeAssets/Common/selectproject.png" alt="Alt text" title="Select project"></p>
+</li>
+<li>
+<p>Select project target</p>
+
+<p><img src="/ReadmeAssets/Common/selecttarget.png" alt="Alt text" title="Select target"></p>
+</li>
+<li>
+<p>Select "Build Phases" tab</p>
+
+<p><img src="/ReadmeAssets/Common/selectbuildphases.png" alt="Alt text" title="Select 'Build Phases'"></p>
+</li>
+<li>
+<p>Open "Copy bundle resources"</p>
+
+<p><img src="/ReadmeAssets/Common/selectcopybundleresources.png" alt="Alt text" title="Select 'Link with binary libraries'"></p>
+</li>
+<li>
+<p>Select "Add items" <img src="/ReadmeAssets/Common/iconadd.png" alt="Alt text" title="Add items (+)">. Bundle resource chooser dialog will open</p>
+
+<p><img src="/ReadmeAssets/Common/bundleresourcechooserdialog.png" alt="Alt text" title="Bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Add other..." <img src="/ReadmeAssets/Common/iconaddother.png" alt="Alt text" title="Add other..."></p></li>
+<li>
+<p>Find WoodoImages.xcassets at the opened dialog</p>
+
+<p><img src="/ReadmeAssets/Common/otherbundleresourcechooserdialog.png" alt="Alt text" title="Other bundle resource chooser dialog"></p>
+</li>
+<li><p>Select "Open" <img src="/ReadmeAssets/Common/iconopen.png" alt="Alt text" title="Open"></p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>Pass new instance of WPDefaultVideoController to "presentWoodoWithUrl:token:attachmentView:shareText:shareTitle:shareRecipients:presentationHandler:startHandler:progressHandler:finishHandler:errorHandler:." selector.</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+<span class="n">UIView</span> <span class="o">*</span><span class="n">attachmentView</span> <span class="o">=</span> <span class="p">[</span><span class="n">WPDefaultVideoControllerView</span> <span class="n">new</span><span class="p">];</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="n">attachmentView</span>
+  <span class="nl">shareText:</span><span class="nb">nil</span>
+  <span class="nl">shareTitle:</span><span class="nb">nil</span>
+  <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+</ul>
+<p>If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.</p>
+</li>
+<li>
+<p>Add social share data</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+<span class="c1">// Used for facebook, twitter &amp; mail share options (Required)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareText</span> <span class="o">=</span> <span class="s">@"Mobilike'ın yeni sitesi yayında - http://mobilike.com/"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options (Optional)</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="n">shareTitle</span> <span class="o">=</span> <span class="s">@"Mobilike"</span><span class="p">;</span>
+<span class="c1">// Only used for mail share options</span>
+<span class="n">NSArray</span> <span class="o">*</span><span class="n">shareRecipients</span> <span class="o">=</span> <span class="p">@[</span><span class="s">@"love@mobilike.com"</span><span class="p">];</span>
+
+<span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+  <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+  <span class="nl">token:</span><span class="n">token</span>
+  <span class="nl">attachmentView:</span><span class="nb">nil</span>
+  <span class="nl">shareText:</span><span class="n">shareText</span>
+  <span class="nl">shareTitle:</span><span class="n">shareTitle</span>
+  <span class="nl">shareRecipients:</span><span class="n">shareRecipients</span>
+  <span class="nl">presentationHandler:</span><span class="nb">nil</span>
+  <span class="nl">startHandler:</span><span class="nb">nil</span>
+  <span class="nl">progressHandler:</span><span class="nb">nil</span>
+  <span class="nl">finishHandler:</span><span class="nb">nil</span>
+  <span class="nl">errorHandler:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</li>
+<li>
+<p>Add event handlers</p>
+
+<div class="highlight highlight-Objective-C"><pre>
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">presentationHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Presented (Available on UI)"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">startHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Started"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">progressHandler</span><span class="p">)(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">)</span> <span class="o">=</span> <span class="o">^</span><span class="p">(</span><span class="n">CGFloat</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">CGFloat</span> <span class="n">duration</span><span class="p">){</span>
+
+    <span class="c1">// Video progress updated</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"%f / %f"</span><span class="p">,</span> <span class="n">currentTime</span><span class="p">,</span> <span class="n">duration</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">finishHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle finish here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Finished"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kt">void</span><span class="p">(</span><span class="o">^</span><span class="n">errorHandler</span><span class="p">)()</span> <span class="o">=</span> <span class="o">^</span><span class="p">(){</span>
+
+    <span class="c1">// Handle error here</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Error"</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="p">[[</span><span class="n">WPManager</span> <span class="n">sharedManager</span><span class="p">]</span>
+    <span class="nl">presentWoodoWithUrl:</span><span class="n">url</span>
+    <span class="nl">token:</span><span class="n">token</span>
+    <span class="nl">attachmentView:</span><span class="nb">nil</span>
+    <span class="nl">shareText:</span><span class="nb">nil</span>
+    <span class="nl">shareTitle:</span><span class="nb">nil</span>
+    <span class="nl">shareRecipients:</span><span class="nb">nil</span>
+    <span class="nl">presentationHandler:</span><span class="n">presentationHandler</span>
+    <span class="nl">startHandler:</span><span class="n">startHandler</span>
+    <span class="nl">progressHandler:</span><span class="n">progressHandler</span>
+    <span class="nl">finishHandler:</span><span class="n">finishHandler</span>
+    <span class="nl">errorHandler:</span><span class="n">errorHandler</span><span class="p">];</span>
+</pre></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>WoodoView &amp; WoodoViewController callbacks</p>
+
+<ul>
+<li>
+<p>Start handler</p>
+
+<p>Called when user content started playing.</p>
+</li>
+<li>
+<p>Progress update handler</p>
+
+<p>Called when user video content updated progress.</p>
+</li>
+<li>
+<p>Finish handler</p>
+
+<p>Called when all media playpack finished.</p>
+</li>
+<li>
+<p>Error handler</p>
+
+<p>Called when any kind of error occured.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Custom player controllers -</p>
+
+<p>// TODO: </p>
+</li>
+<li>
+<p>See sample project for usage</p>
+
+<p>! On iPhone environment, it is mandatory to present WPWoodoViewController.</p>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
