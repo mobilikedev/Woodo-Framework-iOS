@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8222CAE118C8BCE900C1C483 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */; };
 		8222CAE318C8C14900C1C483 /* WoodoImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8222CAE218C8C14900C1C483 /* WoodoImages.xcassets */; };
-		8222CAE718C8DBDE00C1C483 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8222CAE618C8DBDE00C1C483 /* Woodo.framework */; };
 		8287CAE218BB7A1100EA10E2 /* WSIPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */; };
 		828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EA18B7E7D2000ABA29 /* Foundation.framework */; };
 		828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */; };
@@ -28,6 +27,7 @@
 		82B637E518BB9E8600FFD434 /* WSCustomVideoControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B637E418BB9E8600FFD434 /* WSCustomVideoControllerView.m */; };
 		82B637EB18BB9ED500FFD434 /* WSCustomVideoControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B637EA18BB9ED500FFD434 /* WSCustomVideoControllerView.xib */; };
 		82B637EE18BBAEDB00FFD434 /* WSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B637ED18BBAEDB00FFD434 /* WSBaseViewController.m */; };
+		82EBD28E18CDCD4A002BB6A7 /* Woodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EBD28D18CDCD4A002BB6A7 /* Woodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 
 /* Begin PBXFileReference section */
 		8222CAE218C8C14900C1C483 /* WoodoImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = WoodoImages.xcassets; path = ../WoodoImages.xcassets; sourceTree = "<group>"; };
-		8222CAE418C8DBBF00C1C483 /* PushAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushAd.framework; path = "../../pushad-framework-ios/PushAd.framework"; sourceTree = "<group>"; };
-		8222CAE618C8DBDE00C1C483 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Woodo.framework; path = "../../Woodo-Framework-iOS/Woodo.framework"; sourceTree = "<group>"; };
 		8287CADC18BB77C600EA10E2 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		8287CAE018BB7A1100EA10E2 /* WSIPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIPadViewController.h; sourceTree = "<group>"; };
 		8287CAE118BB7A1100EA10E2 /* WSIPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIPadViewController.m; sourceTree = "<group>"; };
@@ -71,6 +69,7 @@
 		82B637EA18BB9ED500FFD434 /* WSCustomVideoControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCustomVideoControllerView.xib; sourceTree = "<group>"; };
 		82B637EC18BBAEDB00FFD434 /* WSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBaseViewController.h; sourceTree = "<group>"; };
 		82B637ED18BBAEDB00FFD434 /* WSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBaseViewController.m; sourceTree = "<group>"; };
+		82EBD28D18CDCD4A002BB6A7 /* Woodo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Woodo.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8222CAE718C8DBDE00C1C483 /* Woodo.framework in Frameworks */,
+				82EBD28E18CDCD4A002BB6A7 /* Woodo.framework in Frameworks */,
 				828DA1ED18B7E7D2000ABA29 /* CoreGraphics.framework in Frameworks */,
 				828DA1EF18B7E7D2000ABA29 /* UIKit.framework in Frameworks */,
 				828DA1EB18B7E7D2000ABA29 /* Foundation.framework in Frameworks */,
@@ -120,8 +119,7 @@
 		828DA1E918B7E7D2000ABA29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8222CAE618C8DBDE00C1C483 /* Woodo.framework */,
-				8222CAE418C8DBBF00C1C483 /* PushAd.framework */,
+				82EBD28D18CDCD4A002BB6A7 /* Woodo.framework */,
 				828DA1EA18B7E7D2000ABA29 /* Foundation.framework */,
 				828DA1EC18B7E7D2000ABA29 /* CoreGraphics.framework */,
 				828DA1EE18B7E7D2000ABA29 /* UIKit.framework */,
@@ -417,13 +415,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
-					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
-					/Users/gokhanbarisaker/Workspace/iOS/Experimental/Sample,
-					"/Users/gokhanbarisaker/Workspace/iOS/pushad-framework-ios",
+					"${PROJECT_DIR}/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
@@ -440,13 +436,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/gokhanbarisaker/Workspace/iOS/Woodo-Framework-iOS",
-					"/Users/gokhanbarisaker/Workspace/iOS/Experimental/Woodo-Framework-iOS",
-					/Users/gokhanbarisaker/Workspace/iOS/Experimental/Sample,
-					"/Users/gokhanbarisaker/Workspace/iOS/pushad-framework-ios",
+					"${PROJECT_DIR}/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
