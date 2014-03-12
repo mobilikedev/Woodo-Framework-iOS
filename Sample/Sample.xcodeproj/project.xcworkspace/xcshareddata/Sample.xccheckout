@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BC7BF202-2939-4BE8-AED7-C8A21B4AD75C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7955F085-1442-415D-8AB3-9E348A508F45</key>
+		<string>ssh://bitbucket.org/nomadcommerce/pushad-framework-ios.git</string>
+		<key>AC6295DC-7516-4586-B797-0B11D24FCFF5</key>
+		<string>https://github.com/mobilikedev/Woodo-Framework-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sample/Sample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7955F085-1442-415D-8AB3-9E348A508F45</key>
+		<string>../../../../pushad-framework-ios</string>
+		<key>AC6295DC-7516-4586-B797-0B11D24FCFF5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mobilikedev/Woodo-Framework-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC6295DC-7516-4586-B797-0B11D24FCFF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7955F085-1442-415D-8AB3-9E348A508F45</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pushad-framework-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC6295DC-7516-4586-B797-0B11D24FCFF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Woodo-Framework-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
