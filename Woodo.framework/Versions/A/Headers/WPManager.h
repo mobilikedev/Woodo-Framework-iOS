@@ -22,6 +22,7 @@
 + (void) setAccessToken:(NSString *) token;
 + (NSString *) clientSecret;
 + (void) setClientSecret:(NSString *) secret;
++ (NSString *) version;
 
 // Woodo view controller presenter
 - (void) presentWoodoWithUrl:(NSURL *) url
