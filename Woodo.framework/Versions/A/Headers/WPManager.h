@@ -29,6 +29,8 @@
                        token:(NSString *) token
               attachmentView:(UIView *) attachmentView
                    shareText:(NSString *) shareText
+                   shareUrls:(NSArray *) shareUrls
+                 shareImages:(NSArray *) shareImages
                   shareTitle:(NSString *) shareTitle
              shareRecipients:(NSArray *) shareRecipients
          presentationHandler:(dispatch_block_t) presentationHandler
@@ -42,6 +44,8 @@
                   token:(NSString *) token
          attachmentView:(UIView *) attachmentView
               shareText:(NSString *) shareText
+              shareUrls:(NSArray *) shareUrls
+            shareImages:(NSArray *) shareImages
              shareTitle:(NSString *) shareTitle
         shareRecipients:(NSArray *) shareRecipients
     presentationHandler:(dispatch_block_t) presentationHandler

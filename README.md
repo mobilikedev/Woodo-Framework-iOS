@@ -1,4 +1,4 @@
-Woodo Framework (v1.2.0)
+Woodo Framework (v1.3.0)
 ==================================
 
 
