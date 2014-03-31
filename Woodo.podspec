@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Woodo"
-  s.version      = "1.3.3"
+  s.version      = "1.4.0"
   s.summary      = "Woodo iOS framework"
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.0'
 
-  s.source       = { :git => "https://github.com/mobilikedev/Woodo-Framework-iOS.git", :tag => "v1.3.3" }
+  s.source       = { :git => "https://github.com/mobilikedev/Woodo-Framework-iOS.git", :tag => "v1.4.0" }
 
 
   s.source_files  = 'Woodo.framework/Versions/A/Headers/*.h'

@@ -10,6 +10,8 @@
 #import <UIKit/UIView.h>
 #import <CoreGraphics/CGBase.h>
 
+@class WPRemoteControl;
+
 @interface WPManager : NSObject
 
 // Singleton instance provider
@@ -25,33 +27,33 @@
 + (NSString *) version;
 
 // Woodo view controller presenter
-- (void) presentWoodoWithUrl:(NSURL *) url
-                       token:(NSString *) token
-              attachmentView:(UIView *) attachmentView
-                   shareText:(NSString *) shareText
-                   shareUrls:(NSArray *) shareUrls
-                 shareImages:(NSArray *) shareImages
-                  shareTitle:(NSString *) shareTitle
-             shareRecipients:(NSArray *) shareRecipients
-         presentationHandler:(dispatch_block_t) presentationHandler
-                startHandler:(dispatch_block_t) startHandler
-             progressHandler:(void(^)(CGFloat currentTime, CGFloat duration)) progressHandler
-               finishHandler:(dispatch_block_t) finishHandler
-                errorHandler:(dispatch_block_t) errorHandler;
+- (WPRemoteControl *) presentWoodoWithUrl:(NSURL *) url
+                                    token:(NSString *) token
+                           attachmentView:(UIView *) attachmentView
+                                shareText:(NSString *) shareText
+                                shareUrls:(NSArray *) shareUrls
+                              shareImages:(NSArray *) shareImages
+                               shareTitle:(NSString *) shareTitle
+                          shareRecipients:(NSArray *) shareRecipients
+                      presentationHandler:(dispatch_block_t) presentationHandler
+                             startHandler:(dispatch_block_t) startHandler
+                          progressHandler:(void(^)(CGFloat currentTime, CGFloat duration)) progressHandler
+                            finishHandler:(dispatch_block_t) finishHandler
+                             errorHandler:(dispatch_block_t) errorHandler;
 
-- (void) addWoodoToView:(UIView *) view
-                    url:(NSURL *) url
-                  token:(NSString *) token
-         attachmentView:(UIView *) attachmentView
-              shareText:(NSString *) shareText
-              shareUrls:(NSArray *) shareUrls
-            shareImages:(NSArray *) shareImages
-             shareTitle:(NSString *) shareTitle
-        shareRecipients:(NSArray *) shareRecipients
-    presentationHandler:(dispatch_block_t) presentationHandler
-           startHandler:(dispatch_block_t) startHandler
-        progressHandler:(void(^)(CGFloat currentTime, CGFloat duration)) progressHandler
-          finishHandler:(dispatch_block_t) finishHandler
-           errorHandler:(dispatch_block_t) errorHandler;
+- (WPRemoteControl *) addWoodoToView:(UIView *) view
+                                 url:(NSURL *) url
+                               token:(NSString *) token
+                      attachmentView:(UIView *) attachmentView
+                           shareText:(NSString *) shareText
+                           shareUrls:(NSArray *) shareUrls
+                         shareImages:(NSArray *) shareImages
+                          shareTitle:(NSString *) shareTitle
+                     shareRecipients:(NSArray *) shareRecipients
+                 presentationHandler:(dispatch_block_t) presentationHandler
+                        startHandler:(dispatch_block_t) startHandler
+                     progressHandler:(void(^)(CGFloat currentTime, CGFloat duration)) progressHandler
+                       finishHandler:(dispatch_block_t) finishHandler
+                        errorHandler:(dispatch_block_t) errorHandler;
 
 @end
