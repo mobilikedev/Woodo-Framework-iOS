@@ -76,8 +76,9 @@ Installation
 
   , and you are done.
 
-  ! To dive in coding, see "How to use" section below.
-  ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
+  *To dive in coding, see "How to use" section below.*
+  
+  *Have questions, ask them on StackOverflow:* http://stackoverflow.com/questions/tagged/woodo
 
   
 - Adding from project settings
@@ -142,6 +143,7 @@ Installation
 
 
   *To dive in coding, see "How to use" section below.*
+  
   *Have questions, ask them on StackOverflow:* http://stackoverflow.com/questions/tagged/woodo
 
 
