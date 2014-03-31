@@ -22,13 +22,10 @@ Requirements
 Installation
 ----------------------------------
 
-- Framework installation
+- Drag and drop
 
-  - Drag and drop
-
-    1. Drag "Woodo.framework" into "Frameworks" folder. 
-      If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project.
-      A dialog for file adding options will appear
+  1. Drag "Woodo.framework" into "Frameworks" folder. 
+     If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project. A dialog for file adding options will appear
 
 
       ![Alt text](/ReadmeAssets/DragAndDrop/dragframework.png "Drag & drop Woodo.framework")
@@ -49,103 +46,103 @@ Installation
           ![Alt text](/ReadmeAssets/DragAndDrop/dragsetuptarget.png "Select <YourProjectName> at "Add to targets" section.")
 
 
-      must be selected.
+          must be selected.
 
-      If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.
+          If cloned Woodo's git repository, it is recommended, but not mandatory, to un-check (de-select) "Copy items into destination group's folder (if needed)", as keeping repository up-to-date would be much more easier.
 
-    2. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
+  2. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
-      ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
+    ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
 
-    3. Select your project from project navigator
+  3. Select your project from project navigator
 
-      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
+    ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
-    4. Select project target
+  4. Select project target
 
-      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
+    ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
-    5. Select "Build settings" tab
+  5. Select "Build settings" tab
 
-      ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
+     ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
 
-    6. Search for "Other Linker Flags"
+  6. Search for "Other Linker Flags"
 
-      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
+    ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
 
-    7. Add "-ObjC" flag
+  7. Add "-ObjC" flag
 
-      ![Alt text](/ReadmeAssets/Common/addflagobjc.png "Add linker flag '-ObjC'")
+    ![Alt text](/ReadmeAssets/Common/addflagobjc.png "Add linker flag '-ObjC'")
 
-    , and you are done.
+  , and you are done.
 
-    ! To dive in coding, see "How to use" section below.
-    ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
+  ! To dive in coding, see "How to use" section below.
+  ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
   
-  - Adding from project settings
+- Adding from project settings
 
-    1. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
+  1. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
-      ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
+    ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
 
-    2. Select your project from project navigator
+  2. Select your project from project navigator
 
-      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
+    ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
-    3. Select project target
+  3. Select project target
 
-      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
+    ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
-    4. Select "Build Phases" tab
+  4. Select "Build Phases" tab
 
-      ![Alt text](/ReadmeAssets/Common/selectbuildphases.png "Select 'Build Phases'")
+    ![Alt text](/ReadmeAssets/Common/selectbuildphases.png "Select 'Build Phases'")
 
-    5. Open "Link with binary libraries"
+  5. Open "Link with binary libraries"
 
-      ![Alt text](/ReadmeAssets/Common/selectlinkwithbinarylibraries.png "Select 'Link with binary libraries'")
+    ![Alt text](/ReadmeAssets/Common/selectlinkwithbinarylibraries.png "Select 'Link with binary libraries'")
 
-    6. Select "Add items" ![Alt text](/ReadmeAssets/Common/iconadd.png "Add items (+)"). Framework and library chooser dialog will open
+  6. Select "Add items" ![Alt text](/ReadmeAssets/Common/iconadd.png "Add items (+)"). Framework and library chooser dialog will open
 
-      ![Alt text](/ReadmeAssets/Common/librarychooserdialog.png "Framework and library chooser dialog")
+    ![Alt text](/ReadmeAssets/Common/librarychooserdialog.png "Framework and library chooser dialog")
 
-    7. Select "Add other..." ![Alt text](/ReadmeAssets/Common/iconaddother.png "Add other...")
+  7. Select "Add other..." ![Alt text](/ReadmeAssets/Common/iconaddother.png "Add other...")
 
-    8. Find Woodo.framework at the opened dialog
+  8. Find Woodo.framework at the opened dialog
 
-      ![Alt text](/ReadmeAssets/Common/otherlibrarychooserdialog.png "Other library chooser dialog")
+    ![Alt text](/ReadmeAssets/Common/otherlibrarychooserdialog.png "Other library chooser dialog")
 
-    9. Select "Open" ![Alt text](/ReadmeAssets/Common/iconopen.png "Open")
+  9. Select "Open" ![Alt text](/ReadmeAssets/Common/iconopen.png "Open")
 
-    10. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
+  10. Now, you have to add 'Other Linker Flags'. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
-      ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
+    ! If unable to see project navigator, navigator might be closed. You could reveal navigation bar with (command + shift + j) keyboard shortcut.
 
-    11. Select your project from project navigator
+  11. Select your project from project navigator
 
-      ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
+    ![Alt text](/ReadmeAssets/Common/selectproject.png "Select project")
 
-    12. Select project target
+  12. Select project target
 
-      ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
+    ![Alt text](/ReadmeAssets/Common/selecttarget.png "Select target")
 
-    13. Select "Build settings" tab
+  13. Select "Build settings" tab
 
-      ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
+    ![Alt text](/ReadmeAssets/Common/selectbuildsettings.png "Select 'Build Settings'")
 
-    14. Search for "Other Linker Flags"
+  14. Search for "Other Linker Flags"
 
-      ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
+    ![Alt text](/ReadmeAssets/Common/searchotherlinkerflags.png "Search for 'Other Linker Flags'")
 
-    15. Add "-ObjC" flag
+  15. Add "-ObjC" flag
 
-      ![Alt text](/ReadmeAssets/Common/addflagobjc.png "Add linker flag '-ObjC'")
+    ![Alt text](/ReadmeAssets/Common/addflagobjc.png "Add linker flag '-ObjC'")
 
-    , and you are done.
+  , and you are done.
 
 
-    ! To dive in coding, see "How to use" section below.
-    ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
+  ! To dive in coding, see "How to use" section below.
+  ! Have questions, ask them on StackOverflow: http://stackoverflow.com/questions/tagged/woodo
 
 
 How to use
