@@ -468,12 +468,12 @@ How to use
 
   Available share data are;
 
-    . Share text, takes NSString instance input as share data.
-    . Share urls, takes NSArray instance. NSArray elements could be either NSURL instance or NSString instance with valid NSURL.
-    . Share images, takes NSArray instance. NSArray elements could be either UIImage instance, NSURL instance of image data or NSString instance with valid image data URL.
+    - Share text, takes NSString instance input as share data.
+    - Share urls, takes NSArray instance. NSArray elements could be either NSURL instance or NSString instance with valid NSURL.
+    - Share images, takes NSArray instance. NSArray elements could be either UIImage instance, NSURL instance of image data or NSString instance with valid image data URL.
 
-    . Share title, takes NSString instance input as mail title. Only used when share via mail prompted.
-    . Share recipients, takes NSArray instance input as share mail recipients. Only used when share via mail prompted.
+    - Share title, takes NSString instance input as mail title. Only used when share via mail prompted.
+    - Share recipients, takes NSArray instance input as share mail recipients. Only used when share via mail prompted.
 
 
   **In order to share widget to activate, at least one of share text, image or url is required.**
