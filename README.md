@@ -529,25 +529,6 @@ How to use
 
 
 
-- WoodoView & WoodoViewController callbacks
-
-  - Start handler
-
-    Called when user content started playing.
-
-  - Progress update handler
-
-    Called when user video content updated progress.
-
-  - Finish handler
-
-    Called when all media playpack finished.
-
-  - Error handler
-
-    Called when any kind of error occured.
-
-
 - Custom player controllers -
   
   // TODO: 
