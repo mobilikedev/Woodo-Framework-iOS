@@ -555,30 +555,30 @@ How to use
 
     ```
 
-    ```Objective-c
-    
-       
-    void(^errorHandler)() = ^(){
-    
-      // Handle error here
-      NSLog(@"Error");
+
+  - Error handler, fired if any error occured during playback. i.e, Timeout occured, non-supported video format provided, ...
+
+    If this callback fired, finish handler won't be called.
+
+    ```Objective-C
+
+    // Definition of error handler
+    void(^errorHandler)();
+
+    // Allocation & initialization of error handler
+    errorHandler = ^(){
+        
+      NSLog(@"Woodo error (Removed from UI)");
     };
-    
+
+    // Assignment of error handler
     [[WPManager sharedManager]
-      presentWoodoWithUrl:url
-      token:token
-      attachmentView:nil
-      shareText:nil
-      shareUrls:nil
-      shareImages:nil
-      shareTitle:nil
-      shareRecipients:nil
-      presentationHandler:presentationHandler
-      startHandler:startHandler
-      progressHandler:progressHandler
-      finishHandler:finishHandler
-      errorHandler:errorHandler];
+      // ...
+      errorHandler:errorHandler
+      // ...];
+
     ```
+
 
 - Default video controllers
 
