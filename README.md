@@ -236,56 +236,6 @@ How to use
          errorHandler:nil];
         ```
 
-      - Add event handlers
-
-        ```Objective-C
-
-          void(^presentationHandler)() = ^(){
-                
-            NSLog(@"Presented (Available on UI)");
-          };
-                
-          void(^startHandler)() = ^(){
-              
-            NSLog(@"Started");
-          };
-            
-            void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
-                
-              // Video progress updated
-              NSLog(@"%f / %f", currentTime, duration);
-            };
-            
-            void(^finishHandler)() = ^(){
-              
-              // Handle finish here
-              NSLog(@"Finished");
-            };
-                
-            void(^errorHandler)() = ^(){
-              
-              // Handle error here
-              NSLog(@"Error");
-            };
-
-            [[WPManager sharedManager]
-             addWoodoToView:self.videoThumbnail
-             url:url
-             token:token
-             attachmentView:nil
-             shareText:nil 
-             shareUrls:nil 
-             shareImages:nil
-             shareTitle:nil
-             shareRecipients:nil
-             presentationHandler:presentationHandler
-             startHandler:startHandler
-             progressHandler:progressHandler
-             finishHandler:finishHandler
-             errorHandler:errorHandler];
-          ```
-
-
       - As modal view controller
 
         - Import required headers 
@@ -558,7 +508,7 @@ How to use
 
   - Error handler, fired if any error occured during playback. i.e, Timeout occured, non-supported video format provided, ...
 
-    If this callback fired, finish handler won't be called.
+    **If this callback fired, finish handler won't be called.**
 
     ```Objective-C
 
