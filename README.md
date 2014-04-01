@@ -184,24 +184,24 @@ How to use
 
     - Call presentation method over WPManager's shared instance with required parameters
 
-    ```Objective-C
-      NSURL *url = [NSURL URLWithString:@"<Your video content url>"];
-      NSString *token = @"<Please contact team@woodo.tv for player token data>";
+      ```Objective-C
+        NSURL *url = [NSURL URLWithString:@"<Your video content url>"];
+        NSString *token = @"<Please contact team@woodo.tv for player token data>";
 
-      [[WPManager sharedManager]
-       addWoodoToView:self.videoThumbnail
-       url:url
-       token:token
-       attachmentView:nil
-       shareText:nil
-       shareTitle:nil
-       shareRecipients:nil
-       presentationHandler:nil
-       startHandler:nil
-       progressHandler:nil
-       finishHandler:nil
-       errorHandler:nil];
-    ```
+        [[WPManager sharedManager]
+         addWoodoToView:self.videoThumbnail
+         url:url
+         token:token
+         attachmentView:nil
+         shareText:nil
+         shareTitle:nil
+         shareRecipients:nil
+         presentationHandler:nil
+         startHandler:nil
+         progressHandler:nil
+         finishHandler:nil
+         errorHandler:nil];
+      ```
 
 
       - Add social share data
