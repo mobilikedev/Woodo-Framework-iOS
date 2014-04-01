@@ -450,53 +450,77 @@ How to use
           errorHandler:nil];
         ```
 
-      - Add event handlers
 
-        ```Objective-C
+- Woodo callbacks
 
-          void(^presentationHandler)() = ^(){
+  **If don't have comprehesinve knowledge on self usage with objective-c blocks, you might want to look at http://albertodebortoli.github.io/blog/2013/08/03/objective-c-blocks-caveat/**
+
+  - Presentation handler,
+
+    . if presenting Woodo as view controller, this callback fired right after presentation animation completed.
+
+    . if adding Woodo as subview, this callback fired right after attached to superview.
+
+    ```Objective-C
+
+    // Definition of presentation handler
+    void(^presentationHandler)();
+
+    // Allocation & initialization of presentation handler
+    presentation handler = ^(){
+        
+      NSLog(@"Presented (Available on UI)");
+    };
+
+    // Assignment of presentation handler
+    [[WPManager sharedManager]
+      // ...
+      presentationHandler:presentationHandler
+      // ...];
+
+    ```
+
+  - Start handler
+        
+    ```Objective-c
+    void(^startHandler)() = ^(){
+      
+      NSLog(@"Started");
+    };
+    
+    void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
               
-            NSLog(@"Presented (Available on UI)");
-          };
-              
-          void(^startHandler)() = ^(){
-            
-            NSLog(@"Started");
-          };
-          
-          void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
-              
-            // Video progress updated
-            NSLog(@"%f / %f", currentTime, duration);
-          };
-          
-          void(^finishHandler)() = ^(){
-            
-            // Handle finish here
-            NSLog(@"Finished");
-          };
-              
-          void(^errorHandler)() = ^(){
-            
-            // Handle error here
-            NSLog(@"Error");
-          };
-              
-          [[WPManager sharedManager]
-            presentWoodoWithUrl:url
-            token:token
-            attachmentView:nil
-            shareText:nil
-            shareUrls:nil
-            shareImages:nil
-            shareTitle:nil
-            shareRecipients:nil
-            presentationHandler:presentationHandler
-            startHandler:startHandler
-            progressHandler:progressHandler
-            finishHandler:finishHandler
-            errorHandler:errorHandler];
-        ```
+      // Video progress updated
+      NSLog(@"%f / %f", currentTime, duration);
+    };
+    
+    void(^finishHandler)() = ^(){
+      
+      // Handle finish here
+      NSLog(@"Finished");
+    };
+       
+    void(^errorHandler)() = ^(){
+    
+      // Handle error here
+      NSLog(@"Error");
+    };
+    
+    [[WPManager sharedManager]
+      presentWoodoWithUrl:url
+      token:token
+      attachmentView:nil
+      shareText:nil
+      shareUrls:nil
+      shareImages:nil
+      shareTitle:nil
+      shareRecipients:nil
+      presentationHandler:presentationHandler
+      startHandler:startHandler
+      progressHandler:progressHandler
+      finishHandler:finishHandler
+      errorHandler:errorHandler];
+    ```
 
 - Default video controllers
 
@@ -594,6 +618,7 @@ How to use
       ```
 
       If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
+
 
 
 - WoodoView & WoodoViewController callbacks
