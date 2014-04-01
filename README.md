@@ -453,7 +453,9 @@ How to use
 
 - Woodo callbacks
 
+
   **If don't have comprehesinve knowledge on self usage with objective-c blocks, you might want to look at http://albertodebortoli.github.io/blog/2013/08/03/objective-c-blocks-caveat/**
+
 
   - Presentation handler,
 
@@ -480,6 +482,7 @@ How to use
 
     ```
 
+
   - Start handler, fired when user-content (non-advertisement) started playback.
         
     ```Objective-C
@@ -500,6 +503,7 @@ How to use
       // ...];
 
     ```
+
 
   - Progress handler, fired when user-content (non-advertisement) playback progress (current playback timestamp) altered.
 
@@ -523,19 +527,36 @@ How to use
 
     ```
 
+
+  - Finish handler,
+
+    . if presented Woodo as view controller, this callback fired right after dismiss animation completed.
+
+    . if added Woodo as subview, this callback fired right after detached from superview.
+
+    Finish handler callback means Woodo completed playing each content (including advertisements).
+
+    ```Objective-C
+
+    // Definition of finish handler
+    void(^finishHandler)();
+
+    // Allocation & initialization of finish handler
+    finishHandler = ^(){
+        
+      NSLog(@"Woodo finished (Removed from UI)");
+    };
+
+    // Assignment of finish handler
+    [[WPManager sharedManager]
+      // ...
+      finishHandler:finishHandler
+      // ...];
+
+    ```
+
     ```Objective-c
     
-    void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
-              
-      // Video progress updated
-      NSLog(@"%f / %f", currentTime, duration);
-    };
-    
-    void(^finishHandler)() = ^(){
-      
-      // Handle finish here
-      NSLog(@"Finished");
-    };
        
     void(^errorHandler)() = ^(){
     
