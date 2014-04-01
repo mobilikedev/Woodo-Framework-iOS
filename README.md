@@ -501,7 +501,27 @@ How to use
 
     ```
 
-  - Progress handler, 
+  - Progress handler, fired when user-content (non-advertisement) playback progress (current playback timestamp) altered.
+
+    ```Objective-C
+
+    // Definition of progress handler
+    void(^progressHandler)(CGFloat currentTime, CGFloat duration);
+
+    // Allocation & initialization of progress handler
+    progressHandler = ^(CGFloat currentTime, CGFloat duration){
+              
+      // Video progress updated
+      NSLog(@"Woodo progress: %f / %f", currentTime, duration);
+    };
+
+    // Assignment of start handler
+    [[WPManager sharedManager]
+      // ...
+      progressHandler:progressHandler
+      // ...];
+
+    ```
 
     ```Objective-c
     
