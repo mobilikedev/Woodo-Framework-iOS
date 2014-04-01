@@ -22,7 +22,7 @@ Requirements
 Installation
 ----------------------------------
 
-- Drag and drop
+### Drag and drop
 
   1. Drag "Woodo.framework" into "Frameworks" folder. 
      If folder is not visible at the left side of XCode window, you could reveal navigation bar with (command + shift + j) keyboard shortcut and find it under your project. A dialog for file adding options will appear
@@ -81,7 +81,7 @@ Installation
   *Have questions, ask them on **StackOverflow**:* http://stackoverflow.com/questions/tagged/woodo
 
   
-- Adding from project settings
+### Adding from project settings
 
   1. Click project navigator icon ![Alt text](/ReadmeAssets/Common/iconnavigator.png "Navigator icon") at upper-left corner (below run button)
 
@@ -235,7 +235,7 @@ How to use
       ```
 
 
-- Woodo callbacks
+### Woodo callbacks
 
 
   **If don't have comprehesinve knowledge on self usage with objective-c blocks, you might want to look at http://albertodebortoli.github.io/blog/2013/08/03/objective-c-blocks-caveat/**
@@ -364,7 +364,7 @@ How to use
     ```
 
 
-- Default video controllers
+### Default video controllers
 
   - Import required headers
 
@@ -462,7 +462,7 @@ How to use
     If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
 
 
-- Social share data
+### Social share data
 
   Social share is easy to implement built-in widget, that covers Facebook, Twitter and Mail share options. These options are valid if and only if accounts enabled at device settings.
 
@@ -505,9 +505,9 @@ How to use
 
   ```
 
-- Custom player controllers
+### Custom player controllers
   
   // Coming soon to documentation
 
 
-- See sample project for usage
+### See sample project for usage
