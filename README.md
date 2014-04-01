@@ -150,7 +150,7 @@ Installation
 How to use
 ----------------------------------
 
-- Setup
+### Setup
 
   In order to use Woodo Framework properly "AccessToken", "AppToken" and "ClientSecret" parameters need to be decleared on WPManager class before usage. It is recommended to perform setup on "UIApplicationDelegate" instance's "application:application didFinishLaunchingWithOptions:." selector. 
 
@@ -172,7 +172,7 @@ How to use
     }
   ```
 
-- Basic usage
+### Basic usage
 
   - As subview
 
