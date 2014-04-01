@@ -476,7 +476,7 @@ How to use
   - Share recipients, takes NSArray instance input as share mail recipients. Only used when share via mail prompted.
 
 
-  **In order to share widget to activate, at least one of share text, image or url is required.**
+  **In order share widget to activate, at least one of share text, image or url is required.**
 
 
   ```Objective-C
