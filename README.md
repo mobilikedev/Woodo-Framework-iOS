@@ -467,9 +467,9 @@ How to use
     void(^presentationHandler)();
 
     // Allocation & initialization of presentation handler
-    presentation handler = ^(){
+    presentationHandler = ^(){
         
-      NSLog(@"Presented (Available on UI)");
+      NSLog(@"Woodo presented (Available on UI)");
     };
 
     // Assignment of presentation handler
@@ -480,13 +480,30 @@ How to use
 
     ```
 
-  - Start handler
+  - Start handler, fired when user-content (non-advertisement) started playback.
         
-    ```Objective-c
-    void(^startHandler)() = ^(){
+    ```Objective-C
+
+    // Definition of start handler
+    void(^startHandler)();
+
+    // Allocation & initialization of start handler
+    startHandler = ^(){
       
-      NSLog(@"Started");
+      NSLog(@"Woodo started");
     };
+
+    // Assignment of start handler
+    [[WPManager sharedManager]
+      // ...
+      startHandler:startHandler
+      // ...];
+
+    ```
+
+  - Progress handler, 
+
+    ```Objective-c
     
     void(^progressHandler)(CGFloat currentTime, CGFloat duration) = ^(CGFloat currentTime, CGFloat duration){
               
