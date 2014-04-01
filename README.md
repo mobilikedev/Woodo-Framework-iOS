@@ -464,40 +464,50 @@ How to use
 
 - Social share data
 
+  Social share is easy to implement built-in widget, that covers Facebook, Twitter and Mail share options. These options are valid if and only if accounts enabled at device settings.
+
+  Available share data are;
+
+    . Share text, takes NSString instance input as share data.
+    . Share urls, takes NSArray instance. NSArray elements could be either NSURL instance or NSString instance with valid NSURL.
+    . Share images, takes NSArray instance. NSArray elements could be either UIImage instance, NSURL instance of image data or NSString instance with valid image data URL.
+
+    . Share title, takes NSString instance input as mail title. Only used when share via mail prompted.
+    . Share recipients, takes NSArray instance input as share mail recipients. Only used when share via mail prompted.
+
+
+  **In order to share widget to activate, at least one of share text, image or url is required.**
+
 
   ```Objective-C
 
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSString *shareText = @"Mobilike'ın yeni sitesi yayında - http://mobilike.com/";
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareUrls = @[@"http://woodo.tv/"];
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareImages = @[@"http://woodo.tv/wp-content/uploads/2014/03/logo.png"];
-        // Only used for mail share options (Optional)
-        NSString *shareTitle = @"Mobilike";
-        // Only used for mail share options
-        NSArray *shareRecipients = @[@"love@mobilike.com"];
+    NSString *shareText = @"Woodo'nun yeni sitesi yayında";
+    NSArray *shareUrls = @[@"http://woodo.tv/"];
+    NSArray *shareImages = @[@"http://woodo.tv/wp-content/uploads/2014/03/logo.png"];
+    NSString *shareTitle = @"Woodo";
+    NSArray *shareRecipients = @[@"love@woodo.tv"];
 
-        [[WPManager sharedManager]
-         addWoodoToView:self.videoThumbnail
-         url:url
-         token:token
-         attachmentView:nil
-         shareText:shareText 
-         shareUrls:shareUrls 
-         shareImages:shareImages
-         shareTitle:shareTitle
-         shareRecipients:shareRecipients
-         presentationHandler:nil
-         startHandler:nil
-         progressHandler:nil
-         finishHandler:nil
-         errorHandler:nil];
+    [[WPManager sharedManager]
+     addWoodoToView:self.videoThumbnail
+     url:url
+     token:token
+     attachmentView:nil
+     shareText:shareText 
+     shareUrls:shareUrls 
+     shareImages:shareImages
+     shareTitle:shareTitle
+     shareRecipients:shareRecipients
+     presentationHandler:nil
+     startHandler:nil
+     progressHandler:nil
+     finishHandler:nil
+     errorHandler:nil];
+
   ```
 
-- Custom player controllers -
+- Custom player controllers
   
-  // TODO: 
+  // Coming soon to documentation
 
 
 - See sample project for usage
