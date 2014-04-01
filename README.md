@@ -204,51 +204,17 @@ How to use
       ```
 
 
-      - Add social share data
+  - As modal view controller
 
-        ```Objective-C
+    - Import required headers 
 
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSString *shareText = @"Mobilike'ın yeni sitesi yayında - http://mobilike.com/";
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareUrls = @[@"http://woodo.tv/"];
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareImages = @[@"http://woodo.tv/wp-content/uploads/2014/03/logo.png"];
-        // Only used for mail share options (Optional)
-        NSString *shareTitle = @"Mobilike";
-        // Only used for mail share options
-        NSArray *shareRecipients = @[@"love@mobilike.com"];
+      ```Objective-C
+        #import <Woodo/WPManager.h>
+      ```
 
-        [[WPManager sharedManager]
-         addWoodoToView:self.videoThumbnail
-         url:url
-         token:token
-         attachmentView:nil
-         shareText:shareText 
-         shareUrls:shareUrls 
-         shareImages:shareImages
-         shareTitle:shareTitle
-         shareRecipients:shareRecipients
-         presentationHandler:nil
-         startHandler:nil
-         progressHandler:nil
-         finishHandler:nil
-         errorHandler:nil];
-        ```
+    - Call presentation method over WPManager's shared instance with required parameters
 
-      - As modal view controller
-
-        - Import required headers 
-
-        ```Objective-C
-          #import <Woodo/WPManager.h>
-        ```
-
-        Note that: Only presentation is allowed to use at iPhone environment.
-
-        - Call presentation method over WPManager's shared instance with required parameters
-
-        ```Objective-C
+      ```Objective-C
         NSURL *url = [NSURL URLWithString:@"<Your video content url>"];
         NSString *token = @"<Please contact team@woodo.tv for player token data>";
 
@@ -266,39 +232,7 @@ How to use
           progressHandler:nil
           finishHandler:nil
           errorHandler:nil];
-        ```
-
-
-      - Add social share data
-
-        ```Objective-C
-
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSString *shareText = @"Mobilike'ın yeni sitesi yayında - http://mobilike.com/";
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareUrls = @[@"http://woodo.tv/"];
-        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
-        NSArray *shareImages = @[@"http://woodo.tv/wp-content/uploads/2014/03/logo.png"];
-        // Only used for mail share options (Optional)
-        NSString *shareTitle = @"Mobilike";
-        // Only used for mail share options (Optional)
-        NSArray *shareRecipients = @[@"love@mobilike.com"];
-
-        [[WPManager sharedManager]
-          presentWoodoWithUrl:url
-          token:token
-          attachmentView:nil
-          shareText:shareText 
-          shareUrls:shareUrls
-          shareImages:shareImages
-          shareTitle:shareTitle
-          shareRecipients:shareRecipients
-          presentationHandler:nil
-          startHandler:nil
-          progressHandler:nil
-          finishHandler:nil
-          errorHandler:nil];
-        ```
+      ```
 
 
 - Woodo callbacks
@@ -528,6 +462,38 @@ How to use
     If given, attachment view will be added to main content, content you want to play, with same size with video player's boundaries.
 
 
+- Social share data
+
+
+  ```Objective-C
+
+        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
+        NSString *shareText = @"Mobilike'ın yeni sitesi yayında - http://mobilike.com/";
+        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
+        NSArray *shareUrls = @[@"http://woodo.tv/"];
+        // Used for facebook, twitter & mail share options (At least one of share text, image or url is required)
+        NSArray *shareImages = @[@"http://woodo.tv/wp-content/uploads/2014/03/logo.png"];
+        // Only used for mail share options (Optional)
+        NSString *shareTitle = @"Mobilike";
+        // Only used for mail share options
+        NSArray *shareRecipients = @[@"love@mobilike.com"];
+
+        [[WPManager sharedManager]
+         addWoodoToView:self.videoThumbnail
+         url:url
+         token:token
+         attachmentView:nil
+         shareText:shareText 
+         shareUrls:shareUrls 
+         shareImages:shareImages
+         shareTitle:shareTitle
+         shareRecipients:shareRecipients
+         presentationHandler:nil
+         startHandler:nil
+         progressHandler:nil
+         finishHandler:nil
+         errorHandler:nil];
+  ```
 
 - Custom player controllers -
   
